@@ -20,14 +20,20 @@ Route::get('/client_customerService',function(){
 route::post('/client_customerService','VsController@postMessage')->name('postMessage');
 
 
-Route::get('/admin_product',function(){
-	return view('admin_product');
-})->name('admin_product');
-
-Route::post('/admin_product','VsController@postProduct')->name('postProduct');
 
 
 
+route::get('/admin_dashboard','VsController@viewDashboard')->name('admin_dashboard');
+
+Route::get('/admin_product','VsController@viewProduct_admin');
+
+Route::get('/admin_addproduct',function(){
+	return view('admin_addproduct');
+})->name('admin_addproduct');
+
+route::delete('/{product_code}', array('uses' => 'VsController@delProduct', 'as' => 'Delproduct'));
+
+Route::post('/admin_addproduct','VsController@postProduct')->name('postProduct');
 
 route::get('/admin_message','VsController@viewMessage')->name('admin_message');
 ?>

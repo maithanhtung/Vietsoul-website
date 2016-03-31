@@ -30,6 +30,15 @@ class VsController extends Controller{
 		return view('index',['products' => Product::all()]);
 	}
 
+	public function delProduct($product_code){
+		DB::table('Products')
+				->where('product_code',$product_code)->delete();
+				echo "Sucessfully";
+	}
+
+	public function viewProduct_admin(){
+		return view('admin_product',['products' => Product::all()]);
+	}
 
 	public function postMessage(Request $request){
 		$name = $request->input('name');
@@ -41,5 +50,15 @@ class VsController extends Controller{
 
 	public function viewMessage(){
 		return view('admin_message',['messages' => Message::all()]);
+	}
+
+
+	public function viewDashboard(){
+		$dashboards = array();
+		$dashboards['order'] = Order::count();
+		$dashboards['message'] = Message::count();
+		$dashboards['user'] = User::count();
+		
+		 return view('admin_dashboard', $dashboards);
 	}
 }
