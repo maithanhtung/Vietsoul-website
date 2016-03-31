@@ -13,21 +13,21 @@
 
 Route::get('/', 'VsController@viewProduct');
 
-Route::get('/service',function(){
-	return view('service');
-})->name('service');
+Route::get('/client_customerService',function(){
+	return view('client_customerService');
+})->name('client_customerService');
 
-route::post('/service','VsController@postMessage')->name('postMessage');
-
-
-Route::get('/product',function(){
-	return view('product');
-})->name('product');
-
-Route::post('/product','VsController@postProduct')->name('postProduct');
+route::post('/client_customerService','VsController@postMessage')->name('postMessage');
 
 
+Route::get('/admin_product',function(){
+	return view('admin_product');
+})->name('admin_product');
+
+Route::post('/admin_product','VsController@postProduct')->name('postProduct');
 
 
-route::get('/message','VsController@viewMessage')->name('viewMessage');
+
+
+route::get('/admin_message','VsController@viewMessage')->name('admin_message');
 ?>

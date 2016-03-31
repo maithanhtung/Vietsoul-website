@@ -40,6 +40,6 @@ class VsController extends Controller{
 	}
 
 	public function viewMessage(){
-		return view('message',['messages' => Message::all()]);
+		return view('admin_message',['messages' => Message::all()]);
 	}
 }
