@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', 'VsController@test');
+Route::get('/', 'VsController@viewProduct');
 
+Route::get('/service',function(){
+	return view('service');
+})->name('service');
+
+route::post('/service','VsController@postMessage')->name('postMessage');
+
+
+Route::get('/product',function(){
+	return view('product');
+})->name('product');
+
+Route::post('/product','VsController@postProduct')->name('postProduct');
+
+
+
+
+route::get('/message','VsController@viewMessage')->name('viewMessage');
 ?>
