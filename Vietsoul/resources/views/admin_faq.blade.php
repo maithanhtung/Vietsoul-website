@@ -44,7 +44,13 @@
     <br>
    FAQ answer: {{ $faq->faq_answer }}
     <br>
+
+    {{ Form::open(['route' => ['delFaq', $faq->faq_number], 'method' => 'delete']) }}
+    <button type="submit">Delete</button>
+      {{ Form::close() }}
     <br>
+    <br>
+
       @endforeach
     
     </body>

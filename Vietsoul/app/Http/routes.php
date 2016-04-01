@@ -20,6 +20,9 @@ route::get('/client_customerService','VsController@viewFaq')->name('client_custo
 
 route::post('/client_customerService','VsController@postMessage')->name('postMessage');
 
+Route::auth();
+
+Route::get('/client_login', 'VsController@login');
 
 
 
@@ -31,7 +34,7 @@ Route::get('/admin_product','VsController@viewProduct_admin')->name('viewadminPr
 Route::get('/admin_addproduct',function(){
 	return view('admin_addproduct'); })->name('admin_addproduct');
 
-route::delete('/{product_code}', array('uses' => 'VsController@delProduct', 'as' => 'Delproduct'));
+route::delete('/admin_product/{product_code}', array('uses' => 'VsController@delProduct', 'as' => 'delProduct'));
 
 Route::get('/admin_editproduct/{product_code}','VsController@vieweditProduct')->name('vieweditProduct');
 
@@ -45,5 +48,8 @@ route::get('/admin_faq','VsController@viewFaq_admin')->name('admin_faq');
 
 route::post('/admin_faq','VsController@postFaq')->name('postFaq');
 
-
+route::delete('/admin_faq/{faq_number}', array('uses' => 'VsController@delFaq', 'as' => 'delFaq'));
 ?>
+<!-- Route::auth();
+
+Route::get('/home', 'HomeController@index'); -->

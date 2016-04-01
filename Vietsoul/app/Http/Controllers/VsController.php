@@ -31,7 +31,15 @@ class VsController extends Controller{
      echo "done";
 	}
 
+	 public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
+     public function login()
+    {
+        return view('client_login');
+    }
 
 
 
@@ -97,5 +105,11 @@ class VsController extends Controller{
 		$faq_number = $request->input('faq_number');
 		DB::table('Faqs')->insert(array('faq_question' => $faq_question,'faq_answer' => $faq_answer,'faq_number' => $faq_number));
      echo "done";
+	}
+
+	public function delFaq($faq_number){
+		DB::table('Faqs')
+				->where('faq_number',$faq_number)->delete();
+				echo "Sucessfully";
 	}
 }

@@ -17,7 +17,7 @@
      number: {{ $product->product_number }}
      <br>
       
-      {{ Form::open(['route' => ['Delproduct', $product->product_code], 'method' => 'delete']) }}
+      {{ Form::open(['route' => ['delProduct', $product->product_code], 'method' => 'delete']) }}
       <button type="submit">Delete</button>
       {{ Form::close() }}
       <a href="./admin_editproduct/{{ $product->product_code }}"><button>Edit</button></a>
