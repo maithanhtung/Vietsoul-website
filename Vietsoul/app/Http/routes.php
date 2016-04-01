@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', 'VsController@viewProduct');
+Route::get('/',function(){
+	return view('index'); });
 
-Route::get('/client_customerService',function(){
-	return view('client_customerService');
-})->name('client_customerService');
+Route::get('/client_allProduct', 'VsController@viewProduct');
+
+route::get('/client_customerService','VsController@viewFaq')->name('client_customerService');
 
 route::post('/client_customerService','VsController@postMessage')->name('postMessage');
 
@@ -25,15 +26,24 @@ route::post('/client_customerService','VsController@postMessage')->name('postMes
 
 route::get('/admin_dashboard','VsController@viewDashboard')->name('admin_dashboard');
 
-Route::get('/admin_product','VsController@viewProduct_admin');
+Route::get('/admin_product','VsController@viewProduct_admin')->name('viewadminProduct');
 
 Route::get('/admin_addproduct',function(){
-	return view('admin_addproduct');
-})->name('admin_addproduct');
+	return view('admin_addproduct'); })->name('admin_addproduct');
 
 route::delete('/{product_code}', array('uses' => 'VsController@delProduct', 'as' => 'Delproduct'));
+
+Route::get('/admin_editproduct/{product_code}','VsController@vieweditProduct')->name('vieweditProduct');
+
+Route::post('/admin_editproduct/{product_code}','VsController@posteditProduct')->name('posteditProduct');
 
 Route::post('/admin_addproduct','VsController@postProduct')->name('postProduct');
 
 route::get('/admin_message','VsController@viewMessage')->name('admin_message');
+
+route::get('/admin_faq','VsController@viewFaq_admin')->name('admin_faq');
+
+route::post('/admin_faq','VsController@postFaq')->name('postFaq');
+
+
 ?>

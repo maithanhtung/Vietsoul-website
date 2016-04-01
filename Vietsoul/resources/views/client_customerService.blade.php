@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Assignment 2</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-    </head>
+   
     <body>
+<h3>All FAQS</h3>
+ @foreach ($faqs as $faq) 
+   FAQ number: {{ $faq->faq_number }}
+    <br>
+   FAQ question: {{ $faq->faq_question }}
+    <br>
+   FAQ answer: {{ $faq->faq_answer }}
+    <br>
+    <br>
+      @endforeach
+<br>
+<br>
+    <h3>Drop us a line :</h3>
+    <br>
         <div class="container">
             {!! Form::open(array('route' => 'postMessage')) !!}
              <table style="width:100%; text-align:left;">
