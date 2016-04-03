@@ -28,6 +28,6 @@ class CreateFaqsTable extends Migration
      */
     public function down()
     {
-         Schema::drop('Faqs');
+         
     }
 }
