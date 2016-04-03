@@ -14,7 +14,7 @@
 Route::get('/',function(){
 	return view('index'); });
 
-Route::get('/client_allProduct', 'VsController@viewProduct');
+Route::get('/client_allProduct', 'VsController@viewProduct')->name('client_viewProduct');
 
 route::get('/client_customerService','VsController@viewFaq')->name('client_customerService');
 
@@ -22,14 +22,17 @@ route::post('/client_customerService','VsController@postMessage')->name('postMes
 
 Route::auth();
 
-Route::get('/client_login', 'VsController@login');
+Route::get('/client_login' , [ 'middleware' => 'auth',
+    'uses' => 'VsController@login']);
 
 
 
 
-route::get('/admin_dashboard','VsController@viewDashboard')->name('admin_dashboard');
+route::get('/admin_dashboard', ['middleware' => 'auth',
+    'uses' =>'VsController@viewDashboard'])->name('admin_dashboard');
 
-Route::get('/admin_product','VsController@viewProduct_admin')->name('viewadminProduct');
+Route::get('/admin_product',  ['middleware' => 'auth',
+    'uses' =>'VsController@viewProduct_admin'])->name('viewadminProduct');
 
 Route::get('/admin_addproduct',function(){
 	return view('admin_addproduct'); })->name('admin_addproduct');
@@ -42,9 +45,11 @@ Route::post('/admin_editproduct/{product_code}','VsController@posteditProduct')-
 
 Route::post('/admin_addproduct','VsController@postProduct')->name('postProduct');
 
-route::get('/admin_message','VsController@viewMessage')->name('admin_message');
+route::get('/admin_message',  ['middleware' => 'auth',
+    'uses' =>'VsController@viewMessage'])->name('admin_message');
 
-route::get('/admin_faq','VsController@viewFaq_admin')->name('admin_faq');
+route::get('/admin_faq', ['middleware' => 'auth',
+    'uses' =>'VsController@viewFaq_admin'])->name('admin_faq');
 
 route::post('/admin_faq','VsController@postFaq')->name('postFaq');
 

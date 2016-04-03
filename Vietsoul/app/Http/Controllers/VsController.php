@@ -31,10 +31,10 @@ class VsController extends Controller{
      echo "done";
 	}
 
-	 public function __construct()
-    {
-        $this->middleware('auth');
-    }
+	 // public function __construct()
+  //   {
+  //       $this->middleware('auth');
+  //   }
 
      public function login()
     {
