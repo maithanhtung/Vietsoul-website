@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
-    
-    <body>
+@extends('client_template')
+@section('content')
+    <div class="container">
     <h1>Welcome to Vietsoul</h1>
     <br>
     <h3>Admin</h3>
@@ -14,7 +13,7 @@
     <a href="./client_allProduct"><button>Client_allProduct</button></a><br>
     <a href="./client_customerService"><button>client_customerService</button></a><br>
     <a href="./client_login"><button>Client_login</button></a><br>
+    <a href="./client_aboutUs"><button>Client_aboutUs</button></a><br>
 
-
-    </body>
-    </html>
+    </div>
+@stop

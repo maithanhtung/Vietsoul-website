@@ -28,7 +28,7 @@ class VsController extends Controller{
 		$email = $request->input('email');
 		$content = $request->input('content');
 		DB::table('Messages')->insert(array('message_name' => $name,'message_email' => $email,'message_content' => $content));
-     echo "done";
+     echo "Your messages has been sent!";
 	}
 
 	 // public function __construct()
@@ -49,7 +49,7 @@ class VsController extends Controller{
 		$product_code = $request->input('product_code');
 		$product_name = $request->input('product_name');
 		$product_description = $request->input('product_description');
-		$product_price = $request->input('product_price'); 
+		$product_price = $request->input('product_price');
 		$product_number = $request->input('product_number');
 		DB::table('Products')->insert(array('product_code' => $product_code,'product_name' => $product_name,'product_price' => $product_price,'product_description' => $product_description,'product_number' => $product_number));
      echo "done";
@@ -72,7 +72,7 @@ class VsController extends Controller{
 		Product::where('product_code',$product_code)->update(['product_code' => $request->input('product_code'),'product_name' => $request->input('product_name'),'product_price' => $request->input('product_price'),'product_description' => $request->input('product_description'),'product_number' => $request->input('product_number'),
 			]);
 		echo 'done';
-	} 
+	}
 
 	public function viewProduct_admin(){
 		return view('admin_product',['products' => Product::all()]);
@@ -89,11 +89,11 @@ class VsController extends Controller{
 		$dashboards['order'] = Order::count();
 		$dashboards['message'] = Message::count();
 		$dashboards['user'] = User::count();
-		
+
 		 return view('admin_dashboard', $dashboards);
 	}
 
-	
+
 
 	public function viewFaq_admin(){
 		return view('admin_faq',['faqs' => Faq::all()]);

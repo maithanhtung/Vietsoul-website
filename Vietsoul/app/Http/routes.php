@@ -12,7 +12,9 @@
 */
 
 Route::get('/',function(){
+	echo $user = Auth::user();
 	return view('index'); });
+
 
 Route::get('/client_allProduct', 'VsController@viewProduct')->name('client_viewProduct');
 
@@ -25,7 +27,9 @@ Route::auth();
 Route::get('/client_login' , [ 'middleware' => 'auth',
     'uses' => 'VsController@login']);
 
+Route::get('/client_aboutUs',function(){
 
+	return view('client_aboutUs'); });
 
 
 route::get('/admin_dashboard', ['middleware' => 'auth',
