@@ -42,3 +42,7 @@ Framework and library
   <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
+
+5.	Server Side SW Design
+MVC design pattern 
+Laravel 5 framework 
