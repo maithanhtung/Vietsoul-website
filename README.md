@@ -14,18 +14,18 @@ Tables: Users, Product, Orders, FAQs, Messages
 
 ## Client Side SW Design
 
-###Client Browser
+####Client Browser
 ●	 FireFox v3.5+
 ●	Internet Explorer 9+
 ●	Chrome
 ●	Safari 4+
 
-###Language
+####Language
 ●	HTML5
 ●	CSS
 ●	JavaScript
 
-###Framework and library
+####Framework and library
 ●	Bootstrap
 ●	jQuery
   <script src="assets/js/jquery-1.11.1.min.js"></script>
