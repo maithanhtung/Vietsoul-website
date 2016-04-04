@@ -38,7 +38,7 @@ Tables: Users, Product, Orders, FAQs, Messages
   <script src="assets/js/jquery.easypiechart.js"></scripti
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/jquery.cbpQTRotator.js"></script>
-*Css libraries
+* Css libraries
   	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
