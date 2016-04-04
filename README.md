@@ -1,18 +1,18 @@
 # Vietsoul-website
-1.Scope of the Project 
+## Scope of the Project 
 Viet Soul is an e-commerce site. It provides a range of Vietnamese traditional items that were made by hand.
 The scope of project is the completion of a client side that receives user input and performs user interfaces, a server-side will update and process requests. The web shop is built for not only customer but also shop owner (Admin) use cases
 
-2.	User Interface
+## User Inteface
 Responsive
 Minimalist Style
 
-3. Database
+## Database
 Sersion control: Migrations make:migration
 Stored in MySQL
 Tables: Users, Product, Orders, FAQs, Messages
 
-4.	Client Side SW Design
+## Client Side SW Design
 
 Client Browser
 ●	 FireFox v3.5+
@@ -43,6 +43,6 @@ Framework and library
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
 
-5.	Server Side SW Design
+## Server Side SW Design
 MVC design pattern 
 Laravel 5 framework 
