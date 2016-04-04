@@ -21,14 +21,14 @@ Tables: Users, Product, Orders, FAQs, Messages
 * Safari 4+
 
 ####Language
-●	HTML5
-●	CSS
-●	JavaScript
+* HTML5
+* CSS
+* JavaScript
 
 ####Framework and library
-●	Bootstrap
-●	jQuery
-  <script src="assets/js/jquery-1.11.1.min.js"></script>
+* Bootstrap
+* jQuery
+   	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
 	<script src="assets/js/imagesloaded.pkgd.js"></script>
@@ -38,11 +38,11 @@ Tables: Users, Product, Orders, FAQs, Messages
   <script src="assets/js/jquery.easypiechart.js"></scripti
   <script src="assets/js/waypoints.min.js"></script>
   <script src="assets/js/jquery.cbpQTRotator.js"></script>
-●	Css libraries
-  <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+*Css libraries
+  	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
 
 ## Server Side SW Design
-MVC design pattern 
-Laravel 5 framework 
+* MVC design pattern 
+* Laravel 5 framework 
