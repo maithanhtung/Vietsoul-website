@@ -15,10 +15,10 @@ Tables: Users, Product, Orders, FAQs, Messages
 ## Client Side SW Design
 
 ####Client Browser
-	* FireFox v3.5+
-	* Internet Explorer 9+
-	* Chrome
-	* Safari 4+
+* FireFox v3.5+
+* Internet Explorer 9+
+* Chrome
+* Safari 4+
 
 ####Language
 ●	HTML5
