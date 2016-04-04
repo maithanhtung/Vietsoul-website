@@ -2,27 +2,30 @@
 @section('content')
 
 <!-- FAQ start -->
-    <div class="container">
-        <div class="pfblock-header">
-            <h2 class="pfblock-title">FAQ</h2>
-            <div class="pfblock-line"></div>
-            <div class="pfblock-subtitle">
-              bla bla
+    <section id="services" class="pfblock pfblock-gray">
+        <div class="container">
+            <div class="pfblock-header">
+                <h2 class="pfblock-title">FAQs</h2>
+                <div class="pfblock-line"></div>
+                <div class="pfblock-subtitle">
+                    Here you can find regular question & answers.
+                </div>
             </div>
-          </div>
-        <div class="cbp-qtrotator cbp-qtcontent">
-         @foreach ($faqs as $faq)
-           <!-- FAQ number: --> {{ $faq->faq_number }}.
-            FAQ question: {{ $faq->faq_question }}
-            <br>
-           FAQ answer: {{ $faq->faq_answer }}
-            <br>
-            <br>
-              @endforeach
+            <div class="cbp-qtrotator cbp-qtcontent">
+                @foreach ($faqs as $faq)
+                    <strong class="pfblock-subtitle">
+                    {{ $faq->faq_number }}.<!-- FAQ number: -->
+                    {{ $faq->faq_question }}
+                    </strong>
+                    <p>{{ $faq->faq_answer }} </p>
+                @endforeach
+            </div>
         </div>
-        <br>
-    </div>
+    </section>
+
 <!-- FAQ end -->
+
+
 
 
 <!-- Contact start -->
@@ -34,10 +37,10 @@
         <div class="col-sm-6 col-sm-offset-3">
 
           <div class="pfblock-header">
-            <h2 class="pfblock-title">Drop me a line</h2>
+            <h2 class="pfblock-title">Drop us a line</h2>
             <div class="pfblock-line"></div>
             <div class="pfblock-subtitle">
-              bla bla
+                we'd love to hear from you
             </div>
           </div>
 

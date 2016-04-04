@@ -64,23 +64,20 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
+
 					</button>
-					<a class="navbar-brand" href="index.html">Viet Soul</a>
+					<a class="navbar-brand" href="{{ url('/') }}">Viet Soul</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-center">
 						<li><a href="./client_allProduct">Product</a></li>
-            <li><a href="./client_aboutUs">About Us</a></li>
+            			<li><a href="./client_aboutUs">About Us</a></li>
 						<li><a href="./client_customerService">Customer Service</a></li>
 					</ul>
-				</div>
-
-				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="./client_login">Sign In</a></li>
 						<li><a href="#services">My Cart</a></li>
-
 					</ul>
 				</div>
 
