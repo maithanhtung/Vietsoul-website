@@ -12,6 +12,8 @@
          <br>
          number: {{ $product->product_number }}
          <br>
+          <a href="./client_addcart/{{ $product->product_code }}"><button>Add to cart</button></a>
+         <br>
         @endforeach
     </div>
 <!-- List Product start -->

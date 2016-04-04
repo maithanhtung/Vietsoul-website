@@ -10,6 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use Illuminate\Http\Response;
 
 Route::get('/',function(){
 	echo $user = Auth::user();
@@ -31,6 +32,16 @@ Route::get('/client_aboutUs',function(){
 
 	return view('client_aboutUs'); });
 
+Route::get('/client_addcart/{product_code}','VsController@addcart')->name('addcart');
+
+Route::get('/client_delcart/{product}','VsController@delcart')->name('delcart');
+
+Route::get('/client_myCart',function(){
+	echo $user = Auth::user();
+	return view('client_myCart'); });
+
+
+// ------------------------------------------------------------------------------------------
 
 route::get('/admin_dashboard', ['middleware' => 'auth',
     'uses' =>'VsController@viewDashboard'])->name('admin_dashboard');

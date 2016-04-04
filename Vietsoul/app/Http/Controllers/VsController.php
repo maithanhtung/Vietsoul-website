@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Symfony\Component\HttpFoundation\Cookie;
 use App\Http\Requests;
+use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 use App\Faq;
 use App\Product;
@@ -12,11 +13,13 @@ use App\Message;
 use App\Order;
 use App\User;
 use DB;
+use Session;
 
 class VsController extends Controller{
 
 	public function viewProduct(){
 		return view('client_allProduct',['products' => Product::all()]);
+
 	}
 
 	public function viewFaq(){
@@ -42,7 +45,41 @@ class VsController extends Controller{
     }
 
 
+    public function addcart($product_code){
+		$product = Product::where('product_code',$product_code)->first();
+		// $cookie = Cookie('product', $product, 86400 );
+		// // echo Cookie('product_code');
+		// echo $product->product_code;
+		// echo '<br>';
+		// echo $cookie->product_code;
+		// $response = new \Illuminate\Http\Response($product);
+		// $response->withCookie('product', $product, 60);
+		
+		// return $response;
+		Session::push('products', $product);
+		echo "done";
 
+		// return view('client_shoppingcart')->withCookie(cookie('product', $product, 45000));
+		// $cookie = Cookie('product', $product, 600);
+		
+		// echo $cookie;
+		// echo "done";
+	}
+
+	 public function delcart($product){
+	 	$products = session('products');
+	 	foreach ($products as $value ) {
+	 		if($value == $product){
+	 			array_forget($products, $value); 
+	 		}
+	 		else{
+	 			echo "dm";
+	 		}
+	 	}
+	 }
+
+
+// ----------------------------------------------------------------------------------------
 
 
 	public function postProduct(Request $request){
