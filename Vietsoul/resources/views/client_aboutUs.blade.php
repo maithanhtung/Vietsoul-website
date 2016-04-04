@@ -10,7 +10,7 @@
 				<div class="col-sm-6 col-sm-offset-3">
 
 					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">This is what I do</h2>
+						<h2 class="pfblock-title">This is what we provide</h2>
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
 							handmade bla bla
@@ -30,7 +30,7 @@
 							<span class="icon-magic-wand"></span>
 						</div>
 						<div class="iconbox-text">
-							<h3 class="iconbox-title">Web Design</h3>
+							<h3 class="iconbox-title">Unique Items</h3>
 							<div class="iconbox-desc">
 								Good things come to those who wait, but only the things left by those who hustle
 							</div>
@@ -46,7 +46,7 @@
 							<span class="icon-puzzle"></span>
 						</div>
 						<div class="iconbox-text">
-							<h3 class="iconbox-title">Web Programming</h3>
+							<h3 class="iconbox-title">Traditional values</h3>
 							<div class="iconbox-desc">
 								Good things come to those who wait, but only the things left by those who hustle
 							</div>
@@ -62,7 +62,7 @@
 							<span class="icon-badge"></span>
 						</div>
 						<div class="iconbox-text">
-							<h3 class="iconbox-title">Branding</h3>
+							<h3 class="iconbox-title">High Quality</h3>
 							<div class="iconbox-desc">
 								Good things come to those who wait, but only the things left by those who hustle
 							</div>
@@ -78,7 +78,7 @@
 							<span class="icon-question"></span>
 						</div>
 						<div class="iconbox-text">
-							<h3 class="iconbox-title">Consultation</h3>
+							<h3 class="iconbox-title">Customer Support</h3>
 							<div class="iconbox-desc">
 								Good things come to those who wait, but only the things left by those who hustle
 							</div>
@@ -97,7 +97,7 @@
 
 <!-- Skills start -->
 
-    <section class="pfblock pfblock-gray" id="skills">
+    <section id="skills"  class="pfblock">
 
 			<div class="container">
 
@@ -108,10 +108,10 @@
                         <div class="col-sm-6 col-sm-offset-3">
 
                             <div class="pfblock-header wow fadeInUp">
-                                <h2 class="pfblock-title">My Skills</h2>
+                                <h2 class="pfblock-title">Customer's Satisfaction</h2>
                                 <div class="pfblock-line"></div>
                                 <div class="pfblock-subtitle">
-                                    No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+                                    This is how people are happy with Viet Soul souvenir
                                 </div>
                             </div>
 
@@ -120,28 +120,28 @@
                     </div><!-- .row -->
 
 					<div class="col-sm-6 col-md-3 text-center">
-						<span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
-                            <span class="percent">80</span>
+						<span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">85</span>
                         </span>
-						<h3 class="text-center">Programming</h3>
+						<h3 class="text-center">Ease of check-out</h3>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
                             <span class="percent">90</span>
                         </span>
-						<h3 class="text-center">Design</h3>
-					</div>
-					<div class="col-sm-6 col-md-3 text-center">
-						<span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
-                            <span class="percent">85</span>
-                        </span>
-						<h3 class="text-center">Marketing</h3>
+						<h3 class="text-center">Variety of brands/products</h3>
 					</div>
 					<div class="col-sm-6 col-md-3 text-center">
 						<span data-percent="95" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
                             <span class="percent">95</span>
                         </span>
-						<h3 class="text-center">UI / UX</h3>
+						<h3 class="text-center">Ability to create an account</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">80</span>
+                        </span>
+						<h3 class="text-center">Free/discounted shipping</h3>
 					</div>
 
 				</div><!--End row -->

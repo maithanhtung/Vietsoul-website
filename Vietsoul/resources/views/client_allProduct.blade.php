@@ -45,8 +45,8 @@
                         <figure class="effect-bubba">
                             <img src="assets/images/item-1.jpg" alt="img01"/>
                             <figcaption>
-                                <h2>Crazy <span>Shark</span></h2>
-                                <p>Lily likes to play with crayons and pencils</p>
+                                <h2>Lorem Ipsum </h2>
+                                <p>Add to cart</p>
                             </figcaption>
                         </figure>
                     </div>
@@ -59,8 +59,8 @@
                         <figure class="effect-bubba">
                             <img src="assets/images/item-2.jpg" alt="img01"/>
                             <figcaption>
-                                <h2>Funny <span>Tortoise</span></h2>
-                                <p>Lily likes to play with crayons and pencils</p>
+                                <h2>Lorem Ipsum </h2>
+                                <p>Add to cart</p>
                             </figcaption>
                         </figure>
                     </div>
@@ -73,8 +73,8 @@
                         <figure class="effect-bubba">
                             <img src="assets/images/item-3.jpg" alt="img01"/>
                             <figcaption>
-                                <h2>The <span>Hat</span></h2>
-                                <p>Lily likes to play with crayons and pencils</p>
+                                <h2>Lorem Ipsum </h2>
+                                <p>Add to cart</p>
                             </figcaption>
                         </figure>
                     </div>
@@ -87,8 +87,8 @@
                         <figure class="effect-bubba">
                             <img src="assets/images/item-4.jpg" alt="img01"/>
                             <figcaption>
-                                <h2>Bang <span>Bang</span></h2>
-                                <p>Lily likes to play with crayons and pencils</p>
+                                <h2>Lorem Ipsum </h2>
+                                <p>Add to cart</p>
                             </figcaption>
                         </figure>
                     </div>
@@ -101,8 +101,8 @@
                         <figure class="effect-bubba">
                             <img src="assets/images/item-5.jpg" alt="img01"/>
                             <figcaption>
-                                <h2>Crypton <span>Dude</span></h2>
-                                <p>Lily likes to play with crayons and pencils</p>
+                                <h2>Lorem Ipsum </h2>
+                                <p>Add to cart</p>
                             </figcaption>
                         </figure>
                     </div>
@@ -115,8 +115,8 @@
                         <figure class="effect-bubba">
                             <img src="assets/images/item-6.jpg" alt="img01"/>
                             <figcaption>
-                                <h2>Don't <span>Poke</span></h2>
-                                <p>Lily likes to play with crayons and pencils</p>
+                                <h2>Lorem Ipsum </h2>
+                                <p>Add to cart</p>
                             </figcaption>
                         </figure>
                     </div>
