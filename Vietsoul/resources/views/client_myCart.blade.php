@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<?php
+
 <br>
 <?php
 	$products = session('products');
