@@ -25,9 +25,6 @@
 
 <!-- FAQ end -->
 
-
-
-
 <!-- Contact start -->
 
   <section id="contact" class="pfblock">
