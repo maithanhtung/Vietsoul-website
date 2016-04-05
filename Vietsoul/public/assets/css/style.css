@@ -1,12 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 
-/*!
- * Clean v2.0.0
- * Homepage: http://scripteden.com
- * Copyright 2015 Script Eden
- * Licensed under MIT
-*/
+
 
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
@@ -241,12 +236,6 @@ textarea.form-control {
 	padding: 0;
 }
 
-.calltoaction h1,
-.calltoaction h2,
-.calltoaction h3,
-.calltoaction h4,
-.calltoaction h5,
-.calltoaction h6,
 .pfblock-image,
 .pfblock-image h1,
 .pfblock-image h2,
@@ -291,47 +280,6 @@ textarea.form-control {
 .pfblock-icon {
 	font-size: 32px;
 }
-.calltoaction *{
-    text-align: center;
-}
-.calltoaction {
-    background: url(../images/item-3.jpg);
-	background-color: #222;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
-	padding: 50px 0;
-	color: #999;
-}
-
-.calltoaction h2 {
-	font-size: 20px;
-	letter-spacing: 1px;
-	margin-bottom: 5px;
-}
-
-.calltoaction-decription{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.calltoaction-btn {
-	text-align: center;
-}
-
-.calltoaction-btn > .btn {
-    background: rgba(255, 255, 255, .8);
-    color: #111;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-.calltoaction-btn > .btn:hover{
-    background: #fff;
 }
 
 .long-down {
@@ -394,7 +342,7 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Servise
+ * Service
 /* ---------------------------------------------- */
 
 .iconbox {
@@ -417,7 +365,7 @@ textarea.form-control {
 }
 
 /* ---------------------------------------------- /*
- * Skills
+ * About Us
 /* ---------------------------------------------- */
 
 .chart {
@@ -712,7 +660,7 @@ textarea.form-control {
 
 
 /*--------------------------------*/
-/***** Portfolio Common style *****/
+/*** Common style *****/
 /*--------------------------------*/
 
 .grid {
@@ -960,7 +908,7 @@ figure.effect-bubba:hover p {
 	margin-left: 3em;
 }
 
-/* Example for media query */
+/* Media query */
 @media screen and (max-width: 30.6em) {
 
 	.cbp-qtrotator {
