@@ -17,10 +17,59 @@ use Session;
 
 class VsController extends Controller{
 
-	public function viewProduct(){
-		return view('client_allProduct',['products' => Product::all()]);
+	
 
-	}
+
+	public function viewProduct(){
+		return view('client_allProduct',['products' => Product::all()]);	
+		}
+
+	public function viewclotProduct(){
+		$products = Product::where('product_code','like','clot%')->get();
+			return view('client_clotProduct',['products' => $products]);	
+		}
+
+	public function viewaccProduct(){
+		$products = Product::where('product_code','like','acc%')->get();
+			return view('client_accProduct',['products' => $products]);	
+		}
+		
+	public function viewtoyProduct(){
+		$products = Product::where('product_code','like','toy%')->get();
+			return view('client_toyProduct',['products' => $products]);	
+		}
+		
+	public function viewartProduct(){
+		$products = Product::where('product_code','like','art%')->get();
+			return view('client_artProduct',['products' => $products]);	
+		}
+		
+	public function viewotherProduct(){
+		$products = Product::where('product_code','like','oth%')->get();
+			return view('client_otherProduct',['products' => $products]);	
+		}
+		
+	public function searchProduct(Request $request){
+		$product_name = $request->input('product_name');
+		$products = Product::where('product_name','like','%'.$product_name.'%')->get();
+		return view('client_searchProduct',['products' => $products]);	
+		}				
+		
+	
+
+	// public function viewclotProduct(){
+
+		
+		
+	// 	// foreach ($clots as $clot) {
+	// 	// 	echo $clot->product_code;
+	// 	// };
+
+
+		
+	// 	return view('client_allProduct',['clots' => $clots,'products' => Product::all()]);
+
+	// }
 
 	public function viewFaq(){
 		return view('client_customerService',['faqs' => Faq::all()]);

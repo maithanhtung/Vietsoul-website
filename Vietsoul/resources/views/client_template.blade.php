@@ -71,7 +71,7 @@
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-center">
-						<li><a href="./client_allProduct">Product</a></li>
+						<li><a href="./client_allProduct/all">Product</a></li>
             			<li><a href="./client_aboutUs">About Us</a></li>
 						<li><a href="./client_customerService">Customer Service</a></li>
 					</ul>

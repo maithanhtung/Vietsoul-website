@@ -19,6 +19,18 @@ Route::get('/',function(){
 
 Route::get('/client_allProduct', 'VsController@viewProduct')->name('client_viewProduct');
 
+Route::get('/client_clotProduct', 'VsController@viewclotProduct')->name('client_viewclotProduct');
+
+Route::get('/client_accProduct', 'VsController@viewaccProduct')->name('client_viewaccProduct');
+
+Route::get('/client_toyProduct', 'VsController@viewtoyProduct')->name('client_viewtoyProduct');
+
+Route::get('/client_artProduct', 'VsController@viewartProduct')->name('client_viewartProduct');
+
+Route::get('/client_otherProduct', 'VsController@viewotherProduct')->name('client_viewotherProduct');
+
+Route::post('/client_searchProduct', 'VsController@searchProduct')->name('client_searchProduct');
+
 route::get('/client_customerService','VsController@viewFaq')->name('client_customerService');
 
 route::post('/client_customerService','VsController@postMessage')->name('postMessage');
