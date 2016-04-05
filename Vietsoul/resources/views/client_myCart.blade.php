@@ -6,7 +6,10 @@
 <body>
 
 <?php
+<br>
+<?php
 	$products = session('products');
+
 	?>
 <h3>My cart:</h3>
 	@foreach ($products as $product)
@@ -26,6 +29,8 @@
          <br>
         @endforeach
 
+
+	   <a href="./client_order"><button>Check out</button></a>
 
 
 </body>
