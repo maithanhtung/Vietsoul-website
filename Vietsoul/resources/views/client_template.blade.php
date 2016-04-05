@@ -77,7 +77,7 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="./client_login">Sign In</a></li>
-						<li><a href="#services">My Cart</a></li>
+						<li><a href="./client_myCart">My Cart</a></li>
 					</ul>
 				</div>
 

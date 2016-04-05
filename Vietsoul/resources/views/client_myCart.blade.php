@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<?php 
+<?php
 	$products = session('products');
 	?>
 <h3>My cart:</h3>
@@ -25,7 +25,7 @@
          <br>
          <br>
         @endforeach
-	
+
 
 
 </body>
