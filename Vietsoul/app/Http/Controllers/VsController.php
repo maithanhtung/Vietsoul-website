@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Cookie;
 use App\Http\Requests;
@@ -55,21 +56,16 @@ class VsController extends Controller{
 		return view('client_searchProduct',['products' => $products]);	
 		}				
 		
-	
+	public function order(){
+		$products = $products = session('products');
+		$user_id = Auth::user()->id;
 
-	// public function viewclotProduct(){
-
-		
-		
-	// 	// foreach ($clots as $clot) {
-	// 	// 	echo $clot->product_code;
-	// 	// };
-
-
-		
-	// 	return view('client_allProduct',['clots' => $clots,'products' => Product::all()]);
-
-	// }
+		foreach ($products as $product) {
+			$product_code = $product->product_code;
+			DB::table('Orders')->insert(array('product_code' => $product_code,'user_id' => $user_id,'order_process' => 'NO','order_trash' => 'NO'));
+		}
+		return view('client_order');
+	}
 
 	public function viewFaq(){
 		return view('client_customerService',['faqs' => Faq::all()]);

@@ -52,6 +52,8 @@ Route::get('/client_myCart',function(){
 	echo $user = Auth::user();
 	return view('client_myCart'); });
 
+Route::get('/client_order', [ 'middleware' => 'auth',
+    'uses' => 'VsController@order'])->name('client_order');
 
 // ------------------------------------------------------------------------------------------
 
