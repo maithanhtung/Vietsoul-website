@@ -163,7 +163,7 @@
 				<div class="col-sm-6 col-sm-offset-3">
 
 					<div class="pfblock-header wow fadeInUp">
-						<h2 class="pfblock-title">What my clients say</h2>
+						<h2 class="pfblock-title">What our clients say</h2>
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
 						bla bla bla
