@@ -22,6 +22,10 @@ a:hover {
 	color: #999;
 }
 
+.contents {
+	min-height: 720px;
+}
+
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
@@ -303,8 +307,8 @@ textarea.form-control {
 }
 
 .home-overlay {
-    background-color: rgba(44, 62, 80, 0.3);
-    background-image: url("../images/pattern.png");
+    /*background-color: rgba(44, 62, 80, 0.3);*/
+    /*background-image: url("../images/pattern.png");*/
     background-repeat: repeat;
     height: 100%;
     left: 0;

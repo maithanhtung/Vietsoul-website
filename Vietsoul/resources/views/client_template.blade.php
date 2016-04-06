@@ -28,9 +28,10 @@
 		<div id="status"></div>
 	</div>
 
+	@yield('banner')
 	<!-- Home start -->
 
-	<section id="home" class="pfblock-image screen-height">
+	<!-- <section id="home" class="pfblock-image screen-height">
         <div class="home-overlay"></div>
 		<div class="intro">
 			<div class="start">Hello, we are</div>
@@ -46,7 +47,7 @@
 		</div>
         </a>
 
-	</section>
+	</section> -->
 
 	<!-- Home end -->
 
@@ -77,7 +78,7 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="./client_login">Sign In</a></li>
-						<li><a href="#services">My Cart</a></li>
+						<li><a href="./client_myCart">My Cart</a></li>
 					</ul>
 				</div>
 
@@ -88,8 +89,9 @@
 	</header>
 
 	<!-- Navigation end -->
-
+	<div class="contents">
 	@yield('content')
+	</div>
 
 	<!-- Footer start -->
 
