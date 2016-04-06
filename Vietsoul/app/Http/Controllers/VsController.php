@@ -62,7 +62,7 @@ class VsController extends Controller{
 
 		foreach ($products as $product) {
 			$product_code = $product->product_code;
-			DB::table('Orders')->insert(array('product_code' => $product_code,'user_id' => $user_id,'order_process' => 'NO','order_trash' => 'NO'));
+			DB::table('orders')->insert(array('product_code' => $product_code,'user_id' => $user_id,'order_process' => 'NO','order_trash' => 'NO'));
 		}
 		return view('client_order');
 	}
@@ -75,7 +75,7 @@ class VsController extends Controller{
 		$name = $request->input('name');
 		$email = $request->input('email');
 		$content = $request->input('content');
-		DB::table('Messages')->insert(array('message_name' => $name,'message_email' => $email,'message_content' => $content));
+		DB::table('messages')->insert(array('message_name' => $name,'message_email' => $email,'message_content' => $content));
      echo "Your messages has been sent!";
 	}
 
@@ -133,14 +133,13 @@ class VsController extends Controller{
 		$product_description = $request->input('product_description');
 		$product_price = $request->input('product_price');
 		$product_number = $request->input('product_number');
-		DB::table('Products')->insert(array('product_code' => $product_code,'product_name' => $product_name,'product_price' => $product_price,'product_description' => $product_description,'product_number' => $product_number));
+		DB::table('products')->insert(array('product_code' => $product_code,'product_name' => $product_name,'product_price' => $product_price,'product_description' => $product_description,'product_number' => $product_number));
      echo "done";
 	}
 
 
 	public function delProduct($product_code){
-		DB::table('Products')
-				->where('product_code',$product_code)->delete();
+		Product::where('product_code',$product_code)->delete();
 				echo "Sucessfully";
 	}
 
@@ -185,13 +184,12 @@ class VsController extends Controller{
 		$faq_question = $request->input('faq_question');
 		$faq_answer = $request->input('faq_answer');
 		$faq_number = $request->input('faq_number');
-		DB::table('Faqs')->insert(array('faq_question' => $faq_question,'faq_answer' => $faq_answer,'faq_number' => $faq_number));
+		DB::table('faqs')->insert(array('faq_question' => $faq_question,'faq_answer' => $faq_answer,'faq_number' => $faq_number));
      echo "done";
 	}
 
 	public function delFaq($faq_number){
-		DB::table('Faqs')
-				->where('faq_number',$faq_number)->delete();
+		Faq::where('faq_number',$faq_number)->delete();
 				echo "Sucessfully";
 	}
 }
