@@ -51,8 +51,6 @@
 
 	<!-- Home end -->
 
-
-
 	<!-- Navigation start -->
 
 	<header class="header">

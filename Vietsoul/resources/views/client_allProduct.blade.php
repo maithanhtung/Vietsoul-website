@@ -1,7 +1,32 @@
 @extends('client_template')
 @section('content')
 
+
+<!--  Category start -->
+
     <div class="container">
+        <div id="category" class="nav navbar-nav navbar-left"> <br>
+            <a href="./client_allProduct"><button>All Products</button></a>
+            <a href="./client_clotProduct"><button>Clothing</button></a>
+            <a href="./client_accProduct"><button>Accessories</button></a>
+            <a href="./client_toyProduct"><button>Toys</button></a>
+            <a href="./client_artProduct"><button>Artworks</button></a>
+            <a href="./client_otherProduct"><button>Other Products</button></a>
+        </div>
+        <div id="searchBox" class="nav navbar-nav navbar-right">
+            {!! Form::open(array('route' => 'client_searchProduct')) !!}
+            Type name here to search product: {!! Form::input('string', 'product_name') !!}
+            {!! Form::submit('Search') !!}
+            {!! Form::close() !!}
+        </div>
+    </div>
+
+<!--  Category end -->
+
+
+<!--  Output start-->
+
+    <div class="container" id="productItem">
         @foreach ($products as $product)
        code: {{ $product->product_code }}
         <br>
@@ -9,34 +34,22 @@
          <br>
          price: {{ $product->product_price }}
          <br>
-         Description: {{ $product->product_description }}
+         Description: {{ $product->product_description }}<!--  Category end -->
          <br>
          number: {{ $product->product_number }}
          <br>
 
-         <br>
           <a href="./client_addcart/{{ $product->product_code }}"><button>Add to cart</button></a>
          <br>
+         <br>
         @endforeach
-
-        <a href="./client_allProduct"><button>Client_allProduct</button></a>
-        <a href="./client_clotProduct"><button>Client_clotProduct</button></a>
-         <a href="./client_accProduct"><button>Client_accProduct</button></a>
-         <a href="./client_toyProduct"><button>Client_toyProduct</button></a>
-          <a href="./client_artProduct"><button>Client_artProduct</button></a>
-          <a href="./client_otherProduct"><button>Client_otherProduct</button></a>
-          <br>
-          {!! Form::open(array('route' => 'client_searchProduct')) !!}
-          Type name here to search product: {!! Form::input('string', 'product_name') !!}
-          {!! Form::submit('Send') !!}
-          {!! Form::close() !!}
-
     </div>
 
-    
-        
-     
-<!-- List Product start -->
+<!--  Output end -->
+
+
+
+<!-- List Product design start -->
 
     <section id="productList" class="pfblock">
         <div class="container">
