@@ -25,7 +25,7 @@
                        <th>Code</th>
                        <th>Name</th>
                        <th>Price</th>
-                       <th>Description</th>
+                       <!-- <th>Description</th> -->
                        <th>Number</th>
                        <th>&nbsp;</th>
                    </thead>
@@ -47,9 +47,9 @@
                                    <div>{{ $product->product_price }}</div>
                                </td>
 
-                               <td class="table-text">
+                              <!--  <td class="table-text">
                                    <div>{{ $product->product_description }}</div>
-                               </td>
+                               </td> -->
 
                                <td class="table-text">
                                    <div>{{ $product->product_number }}</div>
@@ -65,9 +65,14 @@
             </table>
         </div>
         <br>
-        <!--  <table class="table table-striped">
-        	@foreach ($products as $product)
-        		 <br>
+       	    <a href="./client_order"><button class="btn btn-lg btn-block wow fadeInUp animated">Check out</button></a>
+        </div>
+</section>
+@stop
+
+ <!--  <table class="table table-striped">
+            @foreach ($products as $product)
+                 <br>
                  code: {{ $product->product_code }}
                  <br>
                  name: {{ $product->product_name }}
@@ -82,9 +87,3 @@
                  <br>
                 @endforeach
         </table> -->
-
-        	    <a href="./client_order"><button class="btn btn-lg btn-block wow fadeInUp animated">Check out</button></a>
-        </div>
-</section>
-@stop
-
