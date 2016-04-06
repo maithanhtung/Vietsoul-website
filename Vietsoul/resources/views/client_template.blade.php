@@ -28,9 +28,10 @@
 		<div id="status"></div>
 	</div>
 
+	@yield('banner')
 	<!-- Home start -->
 
-	<section id="home" class="pfblock-image screen-height">
+	<!-- <section id="home" class="pfblock-image screen-height">
         <div class="home-overlay"></div>
 		<div class="intro">
 			<div class="start">Hello, we are</div>
@@ -46,9 +47,11 @@
 		</div>
         </a>
 
-	</section>
+	</section> -->
 
 	<!-- Home end -->
+
+
 
 	<!-- Navigation start -->
 
@@ -88,8 +91,9 @@
 	</header>
 
 	<!-- Navigation end -->
-
+	<div class="contents">
 	@yield('content')
+	</div>
 
 	<!-- Footer start -->
 
