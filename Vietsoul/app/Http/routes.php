@@ -13,7 +13,6 @@
 use Illuminate\Http\Response;
 
 Route::get('/',function(){
-	echo $user = Auth::user();
 	return view('index'); });
 
 
@@ -49,7 +48,6 @@ Route::get('/client_addcart/{product_code}','VsController@addcart')->name('addca
 Route::get('/client_delcart/{product}','VsController@delcart')->name('delcart');
 
 Route::get('/client_myCart',function(){
-	echo $user = Auth::user();
 	return view('client_myCart'); });
 
 Route::get('/client_order', [ 'middleware' => 'auth',
