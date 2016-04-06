@@ -10,6 +10,7 @@
     
 	?>
 <h3>My cart:</h3>
+   <!-- TODO: them if vao -->
 	@foreach ($products as $product)
 		 <br>
          code: {{ $product->product_code }}
