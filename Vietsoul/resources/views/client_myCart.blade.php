@@ -5,7 +5,14 @@
     <div class="container">
 
         <?php
+        if (Session::has('products')){
         	$products = session('products');
+        }
+        else {
+          echo "<h3>";
+          echo "You add to your cart nothing";
+          echo "</h3>";
+        }
 
         ?>
         <div class="pfblock-header wow fadeInUp animated">
@@ -16,7 +23,7 @@
             </div>
         </div>
 
-         <!-- TODO: them if vao -->
+         @if((Session::has('products')))
          <div class="pfblock-subtitle">
             <table class="table table-striped">
 
@@ -64,26 +71,11 @@
                    </tbody>
             </table>
         </div>
+          @endif
         <br>
        	    <a href="./client_order"><button class="btn btn-lg btn-block wow fadeInUp animated">Check out</button></a>
         </div>
 </section>
 @stop
 
- <!--  <table class="table table-striped">
-            @foreach ($products as $product)
-                 <br>
-                 code: {{ $product->product_code }}
-                 <br>
-                 name: {{ $product->product_name }}
-                 <br>
-                 price: {{ $product->product_price }}
-                 <br>
-                 Description: {{ $product->product_description }}
-                 <br>
-                 number: {{ $product->product_number }}
-                 <br>
-                  <a href="./client_delcart/{{ $product }}"><button class="btn btn-lg">Remove from mycart</button></a>
-                 <br>
-                @endforeach
-        </table> -->
+ 
