@@ -176,6 +176,15 @@ class VsController extends Controller{
 		$dashboards['order'] = Order::count();
 		$dashboards['message'] = Message::count();
 		$dashboards['user'] = User::count();
+		$product_code = Order::pluck('product_code');
+		$sold = 0;
+		foreach ($product_code as $code ) {
+			$product = Product::where('product_code',$code)->first();
+			$price = $product->product_price;
+			$sold = $sold + $price;
+		}
+		$dashboards['sold'] = $sold;
+		$dashboards['profit'] = $sold * 2 /5;
 
 		 return view('admin_dashboard', $dashboards);
 	}
