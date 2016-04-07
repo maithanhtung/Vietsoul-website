@@ -77,7 +77,7 @@
 						<li><a href="./client_customerService">Customer Service</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="./client_login">Sign In</a></li>
+						<li><a href="./client_login">My Account</a></li>
 						<li><a href="./client_myCart">My Cart</a></li>
 					</ul>
 				</div>

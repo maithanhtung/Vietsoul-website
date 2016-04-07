@@ -96,6 +96,12 @@ Route::get('/admin_addprocOrders/{order_id}','VsController@postprocOrders')->nam
 
 Route::get('/admin_addtrashOrders/{order_id}','VsController@posttrashOrders')->name('addtrashOrders');
 
+
+route::get('/admin_customer', ['middleware' => 'auth',
+    'uses' =>'VsController@viewCustomer'])->name('admin_customer');
+
+Route::get('/admin_cusOrders/{user_id}','VsController@viewcusOrders')->name('viewcustomerOrders');
+
 ?>
 <!-- Route::auth();
 

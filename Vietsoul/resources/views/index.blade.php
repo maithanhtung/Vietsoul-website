@@ -31,7 +31,8 @@
     <a href="./admin_message"><button>Admin_message</button></a><br>
     <a href="./admin_dashboard"><button>Admin_dashboard</button></a><br>
     <a href="./admin_faq"><button>Admin_faq</button></a><br>
-    <a href="./admin_newOrders"><button>Admin_newOrders</button></a><br><br>
+    <a href="./admin_customer"><button>Admin_customer</button></a><br>
+    <a href="./admin_newOrders"><button>Admin_order</button></a><br><br>
 
     <h3>CLient</h3>
 

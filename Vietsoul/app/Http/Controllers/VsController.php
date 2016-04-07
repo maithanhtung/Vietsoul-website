@@ -159,6 +159,12 @@ class VsController extends Controller{
 		return view('admin_product',['products' => Product::all()]);
 	}
 
+	public function viewCustomer(){
+		$users = User::all();
+   
+      
+		return view('admin_customer',['users' => $users]);
+	}
 
 	public function viewMessage(){
 		return view('admin_message',['messages' => Message::all()]);
@@ -206,6 +212,11 @@ class VsController extends Controller{
 	public function viewtrashOrders(){
 		$orders = Order::where('order_process','=','NO')->where('order_trash','=','YES')->get();
 		return view('admin_trashOrders',['orders' => $orders]);
+	}
+
+	public function viewcusOrders($id){
+		$orders = Order::where('user_id',$id)->get();
+		return view('admin_cusOrders',['orders' => $orders]);
 	}
 
 	public function postprocOrders($order_id){
