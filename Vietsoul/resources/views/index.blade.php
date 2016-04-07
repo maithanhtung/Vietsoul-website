@@ -21,7 +21,7 @@
     </section>
 
     <!-- Home end -->
-
+@stop
 @section('content')
     <div class="container">
     <h1>Welcome to Vietsoul</h1>
