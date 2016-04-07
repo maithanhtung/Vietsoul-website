@@ -81,6 +81,21 @@ route::get('/admin_faq', ['middleware' => 'auth',
 route::post('/admin_faq','VsController@postFaq')->name('postFaq');
 
 route::delete('/admin_faq/{faq_number}', array('uses' => 'VsController@delFaq', 'as' => 'delFaq'));
+
+
+route::get('/admin_newOrders',  ['middleware' => 'auth',
+    'uses' =>'VsController@viewnewOrders'])->name('admin_newOrders');
+
+route::get('/admin_procOrders',  ['middleware' => 'auth',
+    'uses' =>'VsController@viewprocOrders'])->name('admin_procOrders');
+
+route::get('/admin_trashOrders',  ['middleware' => 'auth',
+    'uses' =>'VsController@viewtrashOrders'])->name('admin_trashOrders');
+
+Route::get('/admin_addprocOrders/{order_id}','VsController@postprocOrders')->name('addprocOrders');
+
+Route::get('/admin_addtrashOrders/{order_id}','VsController@posttrashOrders')->name('addtrashOrders');
+
 ?>
 <!-- Route::auth();
 

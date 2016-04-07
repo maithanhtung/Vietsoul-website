@@ -192,4 +192,30 @@ class VsController extends Controller{
 		Faq::where('faq_number',$faq_number)->delete();
 				echo "Sucessfully";
 	}
+
+	public function viewnewOrders(){
+		$orders = Order::where('order_process','=','NO')->where('order_trash','=','NO')->get();
+		return view('admin_newOrders',['orders' => $orders]);
+	}
+
+	public function viewprocOrders(){
+		$orders = Order::where('order_process','=','YES')->where('order_trash','=','NO')->get();
+		return view('admin_procOrders',['orders' => $orders]);
+	}
+
+	public function viewtrashOrders(){
+		$orders = Order::where('order_process','=','NO')->where('order_trash','=','YES')->get();
+		return view('admin_trashOrders',['orders' => $orders]);
+	}
+
+	public function postprocOrders($order_id){
+		Order::where('order_id',$order_id)->update(['order_process' => 'YES']);
+		echo 'done';
+	}
+
+	public function posttrashOrders($order_id){
+		Order::where('order_id',$order_id)->update(['order_process' => 'NO', 'order_trash' => 'YES']);
+		echo 'done';
+	}
+
 }
