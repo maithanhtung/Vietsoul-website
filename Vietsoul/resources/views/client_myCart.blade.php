@@ -69,7 +69,7 @@
                                </td> -->
 
                                <td>
-                                   <a href="./client_delcart/{{ $product }}"><img src="asstoets/icon/remove.png" class="remove-icon" title="Remove this item from shopping cart"></a>
+                                   <a href="./client_delcart/{{ $product }}"><img src="assets/icon/remove.png" class="remove-icon" title="Remove this item from shopping cart"></a>
                                </td>
 
                            </tr>
