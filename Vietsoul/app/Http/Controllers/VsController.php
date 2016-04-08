@@ -91,7 +91,7 @@ class VsController extends Controller{
 
       public function logout()
     {
-    	Auth::guard($this->getGuard())->logout();
+    	Auth::logout();
         session()->forget('products');
     	session()->forget('total');
         return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');

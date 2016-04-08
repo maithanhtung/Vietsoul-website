@@ -12,11 +12,7 @@
 */
 use Illuminate\Http\Response;
 
-Route::get('/',function(){
-    // if (Auth::logout()) {
-    //     Session::forget('products');
-    //     Session::forget('total');
-    // }
+Route::get('/',function(){  
 	return view('index'); });
 
 
@@ -40,6 +36,7 @@ route::post('/client_customerService','VsController@postMessage')->name('postMes
 
 Route::auth();
 
+Route::get('/client_logout','VsController@logout')->name('client_logout');
 
 Route::get('/client_login' , [ 'middleware' => 'auth',
     'uses' => 'VsController@login']);
