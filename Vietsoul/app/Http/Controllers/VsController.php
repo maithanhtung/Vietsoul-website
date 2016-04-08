@@ -101,7 +101,19 @@ class VsController extends Controller{
 		// $response->withCookie('product', $product, 60);
 		
 		// return $response;
+		if (Session::has('products')) {
+				$total = session('total');
+				$total = $total + $product->product_price;
+			}
+		else{
+				$total = $product->product_price;
+			}
+
+
+		Session::put('total', $total);
+
 		Session::push('products', $product);
+		
 		echo "done";
 
 		// return view('client_shoppingcart')->withCookie(cookie('product', $product, 45000));

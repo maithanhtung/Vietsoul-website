@@ -18,6 +18,7 @@
                     <?php
                       if (Session::has('products')){
                         $products = session('products');
+                        $total = session('total');
                       }
                       else {
                         echo "<p>";
@@ -76,6 +77,7 @@
                        @endforeach
                    </tbody>
             </table>
+            TOTAL : {{ $total }}
         </div>
           @endif
         <br>
