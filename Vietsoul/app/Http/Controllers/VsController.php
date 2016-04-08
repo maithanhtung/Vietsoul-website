@@ -89,6 +89,13 @@ class VsController extends Controller{
         return view('client_login');
     }
 
+      public function logout()
+    {
+    	session()->forget('products');
+    	session()->forget('total');
+    	echo "done";
+        return view('/');
+    }
 
     public function addcart($product_code){
 		$product = Product::where('product_code',$product_code)->first();
@@ -123,16 +130,25 @@ class VsController extends Controller{
 		// echo "done";
 	}
 
-	 public function delcart($product){
+	 public function delcart($product_code){
 	 	$products = session('products');
-	 	foreach ($products as $value ) {
-	 		if($value == $product){
-	 			array_forget($products, $value); 
+	 	foreach ($products as $product ) {
+	 		if($product->product_code == $product_code){
+            $key = array_search($product, $products);
+			if($key !== FALSE) {
+  				unset($products[$key]);
+				}
+	 		 echo "done";
+	 		$total = session('total');
+			$total = $total - $product->product_price;
+			break;
 	 		}
 	 		else{
 	 			echo "dm";
 	 		}
 	 	}
+	 	Session::put('total',$total);
+	 	Session::put('products',$products);
 	 }
 
 

@@ -70,14 +70,18 @@
                                </td> -->
 
                                <td>
-                                   <a href="./client_delcart/{{ $product }}"><img src="assets/icon/remove.png" class="remove-icon" title="Remove this item from shopping cart"></a>
+                                   <a href="./client_delcart/{{ $product->product_code }}"><img src="assets/icon/remove.png" class="remove-icon" title="Remove this item from shopping cart"></a>
                                </td>
 
                            </tr>
                        @endforeach
                    </tbody>
             </table>
-            TOTAL : {{ $total }}
+            @if($total != 0)
+                TOTAL : {{ $total }}
+            @else
+                  <p>Your cart is now empty!</p>
+            @endif
         </div>
           @endif
         <br>

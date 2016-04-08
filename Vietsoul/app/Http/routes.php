@@ -13,6 +13,10 @@
 use Illuminate\Http\Response;
 
 Route::get('/',function(){
+    // if (Auth::logout()) {
+    //     Session::forget('products');
+    //     Session::forget('total');
+    // }
 	return view('index'); });
 
 
@@ -36,6 +40,7 @@ route::post('/client_customerService','VsController@postMessage')->name('postMes
 
 Route::auth();
 
+
 Route::get('/client_login' , [ 'middleware' => 'auth',
     'uses' => 'VsController@login']);
 
@@ -45,7 +50,7 @@ Route::get('/client_aboutUs',function(){
 
 Route::get('/client_addcart/{product_code}','VsController@addcart')->name('addcart');
 
-Route::get('/client_delcart/{product}','VsController@delcart')->name('delcart');
+Route::get('/client_delcart/{product_code}','VsController@delcart')->name('delcart');
 
 Route::get('/client_myCart',function(){
 	return view('client_myCart'); });
