@@ -80,7 +80,7 @@
             @if($total != 0)
                 TOTAL : {{ $total }}
             @else
-                  <p>Your cart is now empty!</p>
+                  <p class="notice-nothing">You have removed all selected products. Nothing on your cart now!</p>
             @endif
         </div>
           @endif
