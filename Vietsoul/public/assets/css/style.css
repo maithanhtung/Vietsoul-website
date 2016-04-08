@@ -223,6 +223,7 @@ textarea.form-control {
 	margin-left: 6px;
 }
 
+
 /* ---------------------------------------------- /*
  * General Styles
 /* ---------------------------------------------- */
@@ -405,6 +406,26 @@ textarea.form-control {
 	text-align: center;
 }
 
+
+/* ---------------------------------------------- /*
+ * My Cart
+/* ---------------------------------------------- */
+.checkOut-btn {
+	background: rgb(255, 82, 82);
+}
+
+.checkOut-btn:hover {
+	background-color: #EC2217;
+}
+
+.remove-icon:hover {
+	opacity: 0.65;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #FEF1EF;
+  color: #0D0201;
+}
 /* ---------------------------------------------- /*
  * Footer
 /* ---------------------------------------------- */
@@ -924,3 +945,10 @@ figure.effect-bubba:hover p {
 
 }
 
+/*-----------------------*/
+/***** Notice *****/
+/*-----------------------*/
+
+.notice-nothing {
+	color: #ff5252;
+}
