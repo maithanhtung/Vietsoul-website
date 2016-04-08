@@ -91,10 +91,11 @@ class VsController extends Controller{
 
       public function logout()
     {
-    	session()->forget('products');
+    	Auth::guard($this->getGuard())->logout();
+        session()->forget('products');
     	session()->forget('total');
-    	echo "done";
-        return view('/');
+        return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');
+    	
     }
 
     public function addcart($product_code){
@@ -121,7 +122,7 @@ class VsController extends Controller{
 
 		Session::push('products', $product);
 		
-		echo "done";
+		return redirect()->route('client_viewProduct');
 
 		// return view('client_shoppingcart')->withCookie(cookie('product', $product, 45000));
 		// $cookie = Cookie('product', $product, 600);
@@ -138,17 +139,15 @@ class VsController extends Controller{
 			if($key !== FALSE) {
   				unset($products[$key]);
 				}
-	 		 echo "done";
 	 		$total = session('total');
 			$total = $total - $product->product_price;
 			break;
 	 		}
-	 		else{
-	 			echo "dm";
-	 		}
 	 	}
 	 	Session::put('total',$total);
 	 	Session::put('products',$products);
+	 	return redirect()->route('client_myCart');
+
 	 }
 
 

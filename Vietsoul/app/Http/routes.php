@@ -53,7 +53,7 @@ Route::get('/client_addcart/{product_code}','VsController@addcart')->name('addca
 Route::get('/client_delcart/{product_code}','VsController@delcart')->name('delcart');
 
 Route::get('/client_myCart',function(){
-	return view('client_myCart'); });
+	return view('client_myCart'); })->name('client_myCart');
 
 Route::get('/client_order', [ 'middleware' => 'auth',
     'uses' => 'VsController@order'])->name('client_order');
