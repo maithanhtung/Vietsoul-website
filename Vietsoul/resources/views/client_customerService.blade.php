@@ -2,7 +2,7 @@
 @section('content')
 
 <!-- FAQ start -->
-    <section id="services" class="pfblock pfblock-gray">
+    <section id="services" class="pfblock">
         <div class="container">
             <div class="pfblock-header">
                 <h2 class="pfblock-title">FAQs</h2>
@@ -25,9 +25,9 @@
 
 <!-- FAQ end -->
 
-<!-- Contact start -->
+<!-- Message start -->
 
-  <section id="contact" class="pfblock">
+  <section id="message" class="pfblock  pfblock-gray">
     <div class="container">
       <div class="row">
 
@@ -77,6 +77,33 @@
   </section>
 
   <!-- Contact end -->
+
+<!-- Contact info start -->
+    <section id="contact" class="pfblock">
+        <div class="container">
+            <div class="pfblock-header">
+                <h2 class="pfblock-title">More traditional methods </h2>
+                <div class="pfblock-line"></div>
+                <div class="pfblock-subtitle">
+                    If submitting an email form isn't your thing, you can also contact us in a few more tried and tested ways.
+                </div>
+            </div>
+            <div class="col-sm-6 col-sm-offset-3  wow fadeInUp">
+                <div class="cbp-qtrotato">
+                    <strong>Phone Number</strong>
+                    <p>+64 (09) 483 7303</p>
+                    <p>Business hours are 9am to 5pm, Monday to Friday</p>
+                    <br>
+                    <strong>Postal Address</strong>
+                    <p>VietSoul Ltd<p>
+                    <p>Ylioppilaantie 4, 90130 Oulu, Finland<p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact end -->
+
 
 <!-- CallToAction start --  >
    <!-- <section class="calltoaction">

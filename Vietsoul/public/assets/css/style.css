@@ -4,7 +4,7 @@
 
 body {
 	font: 300 14px/1.8 'Raleway', sans-serif;
-	color: #666;
+	color: #4d4d4d;
 	overflow-x: hidden;
 }
 
@@ -47,6 +47,17 @@ a,
 		-ms-transition: all 0.125s ease-in-out 0s;
 		 -o-transition: all 0.125s ease-in-out 0s;
 			transition: all 0.125s ease-in-out 0s;
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .navbar-nav > li > a,
+.navbar-custom .navbar-nav .dropdown-menu > li > a {
+	background: none;
+    outline: 0;
+    color: #E7746F;
+}
+
+a:active {
+	color: #E7746F;
 }
 
 /* ---------------------------------------------- /*

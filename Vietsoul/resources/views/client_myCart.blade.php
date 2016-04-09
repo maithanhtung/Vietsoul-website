@@ -30,9 +30,8 @@
             </div>
         </div>
 
-
-         @if((Session::has('products')))
-         <div class="pfblock-subtitle">
+        @if((Session::has('products')))
+        <div class="pfblock-subtitle">
             <table class="table table-responsive table-striped table-hover">
 
                    <!-- Table Headings -->
@@ -40,8 +39,6 @@
                        <th>Code</th>
                        <th>Name</th>
                        <th>Price</th>
-                       <!-- <th>Description</th> -->
-                       <!-- <th>Number</th> -->
                        <th>&nbsp</th>
                    </thead>
 
@@ -51,53 +48,53 @@
                            <tr>
                                <!-- Product Information -->
                                <td class="table-text">
-                                   <div>{{ $product->product_code }}</div>
+                                    <div>{{ $product->product_code }}</div>
                                </td>
-
                                <td class="table-text">
-                                   <div>{{ $product->product_name }}</div>
+                                    <div>{{ $product->product_name }}</div>
                                </td>
-
                                <td class="table-text">
-                                   <div>$ {{ $product->product_price }}</div>
+                                    <div>$ {{ $product->product_price }}</div>
                                </td>
-
-                             <!--  <td class="table-text">
-                                   <div>{{ $product->product_description }}</div>
-
-                               <td class="table-text">
-                                   <div>{{ $product->product_number }}</div>
-                               </td> -->
-
                                <td>
-                                   <a href="./client_delcart/{{ $product->product_code }}"><img src="assets/icon/remove.png" class="remove-icon" title="Remove this item from shopping cart"></a>
+                                    <a href="./client_delcart/{{ $product->product_code }}"><img src="assets/icon/remove.png" class="remove-icon" title="Remove this item from shopping cart"></a>
                                </td>
-
                            </tr>
                        @endforeach
                    </tbody>
             </table>
+
+            <div class="pfblock-header pfblock-subtitle">
             @if($total != 0)
-                TOTAL : {{ $total }}
+                <div class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <strong>TOTAL: {{ $total }} USD</strong>
+                    <p>Delivery: Free</p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <a href="./client_allProduct"><button class="btn btn-lg btn-block wow fadeInUp animated">Continue to shopping</button></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4"></div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <a href="./client_order"><button class="btn btn-lg btn-block wow fadeInUp animated checkOut-btn">Check out</button></a>
+                    </div>
+                </div>
+
             @else
-                  <p class="notice-nothing">You have removed all selected products. Nothing on your cart now!</p>
-            @endif
-        </div>
-          @endif
-        <br>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
+                <p class=" pfblock-header pfblock-subtitle notice-nothing">You have removed all selected products. Nothing on your cart now!</p>
+                <div class="col-md-12 col-md-4"></div>
+                <div class="col-md-12 col-md-4">
                     <a href="./client_allProduct"><button class="btn btn-lg btn-block wow fadeInUp animated">Continue to shopping</button></a>
                 </div>
 
-                <div class="col-xs-12 col-sm-4 col-md-4"></div>
-
-                <div class="col-xs-12 col-sm-4 col-md-4">
-           	        <a href="./client_order"><button class="btn btn-lg btn-block wow fadeInUp animated checkOut-btn">Check out</button></a>
-                </div>
+            @endif
             </div>
 
         </div>
+        @endif
+
+    </div>
 </section>
 @stop
 
