@@ -543,8 +543,12 @@ textarea.form-control {
 
 .navbar-custom .navbar-brand {
 	font-weight: 700;
-	font-size: 22px;
-    font-family: Lobster, cursive;
+	font-size: 35px;
+}
+
+.navbar-brand {
+	text-transform: capitalize;
+	font-family: 'Dancing Script', cursive;
 }
 
 .navbar-custom .dropdown-menu {

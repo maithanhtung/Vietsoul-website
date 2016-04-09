@@ -13,10 +13,10 @@
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
 	<link href="assets/css/animate.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Custom styles CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" media="screen">
-
     <script src="assets/js/modernizr.custom.js"></script>
 
 </head>
@@ -102,11 +102,35 @@
 				<div class="col-sm-12">
 
 					<ul class="social-links">
-						<li><a href="{{ url('https://www.facebook.com/VietSoulTM/') }}" class="wow bounceInUp"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="{{ url('https://twitter.com/VietSoulTM') }}" class="wow bounceInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="{{ url('https://plus.google.com/u/0/110977259142902681529/posts') }}" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="{{ url('https://www.pinterest.com/ken_91vn/') }}" class="wow bounceInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="{{ url('https://www.instagram.com/vietsoulshop/') }}" class="wow bounceInUp" data-wow-delay=".5s"><i class="fa fa-instagram"></i></a></li>
+						<li title="Like us on Facebook">
+							<a href="{{ url('https://www.facebook.com/VietSoulTM/') }}" class="wow fadeInUp">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+
+						<li title="Follow @VietSoul on Twitter">
+							<a href="{{ url('https://twitter.com/VietSoulTM') }}" class="wow fadeInUp" data-wow-delay=".1s">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+
+						<li title="Visit us on Google+">
+							<a href="{{ url('https://plus.google.com/u/0/110977259142902681529/posts') }}" class="wow fadeInUp" data-wow-delay=".2s">
+								<i class="fa fa-google-plus"></i>
+							</a>
+						</li>
+
+						<li title="Pin our product on Pinterest">
+							<a href="{{ url('https://www.pinterest.com/ken_91vn/') }}" class="wow fadeInUp" data-wow-delay=".4s">
+								<i class="fa fa-pinterest"></i>
+							</a>
+						</li>
+
+						<li title="Find #VietSoul on Instagram">
+							<a href="{{ url('https://www.instagram.com/vietsoulshop/') }}" class="wow fadeInUp" data-wow-delay=".5s">
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
 					</ul>
 
 					<p class="heart">
