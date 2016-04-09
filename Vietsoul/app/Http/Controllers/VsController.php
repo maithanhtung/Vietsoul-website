@@ -18,44 +18,44 @@ use Session;
 
 class VsController extends Controller{
 
-	
+
 
 
 	public function viewProduct(){
-		return view('client_allProduct',['products' => Product::all()]);	
+		return view('client_allProduct',['products' => Product::all()]);
 		}
 
 	public function viewclotProduct(){
 		$products = Product::where('product_code','like','clot%')->get();
-			return view('client_clotProduct',['products' => $products]);	
+			return view('client_clotProduct',['products' => $products]);
 		}
 
 	public function viewaccProduct(){
 		$products = Product::where('product_code','like','acc%')->get();
-			return view('client_accProduct',['products' => $products]);	
+			return view('client_accProduct',['products' => $products]);
 		}
-		
+
 	public function viewtoyProduct(){
 		$products = Product::where('product_code','like','toy%')->get();
-			return view('client_toyProduct',['products' => $products]);	
+			return view('client_toyProduct',['products' => $products]);
 		}
-		
+
 	public function viewartProduct(){
 		$products = Product::where('product_code','like','art%')->get();
-			return view('client_artProduct',['products' => $products]);	
+			return view('client_artProduct',['products' => $products]);
 		}
-		
+
 	public function viewotherProduct(){
 		$products = Product::where('product_code','like','oth%')->get();
-			return view('client_otherProduct',['products' => $products]);	
+			return view('client_otherProduct',['products' => $products]);
 		}
-		
+
 	public function searchProduct(Request $request){
 		$product_name = $request->input('product_name');
 		$products = Product::where('product_name','like','%'.$product_name.'%')->get();
-		return view('client_searchProduct',['products' => $products]);	
-		}				
-		
+		return view('client_searchProduct',['products' => $products]);
+		}
+
 	public function order(){
 		$products = $products = session('products');
 		$user_id = Auth::user()->id;
@@ -64,7 +64,11 @@ class VsController extends Controller{
 			$product_code = $product->product_code;
 			DB::table('orders')->insert(array('product_code' => $product_code,'user_id' => $user_id,'order_process' => 'NO','order_trash' => 'NO'));
 		}
+		Session::forget('products');
+		Session::forget('total');
+
 		return view('client_order');
+
 	}
 
 	public function viewFaq(){
@@ -95,7 +99,7 @@ class VsController extends Controller{
         session()->forget('products');
     	session()->forget('total');
         return redirect(property_exists($this, 'redirectAfterLogout') ? $this->redirectAfterLogout : '/');
-    	
+
     }
 
     public function addcart($product_code){
@@ -107,7 +111,7 @@ class VsController extends Controller{
 		// echo $cookie->product_code;
 		// $response = new \Illuminate\Http\Response($product);
 		// $response->withCookie('product', $product, 60);
-		
+
 		// return $response;
 		if (Session::has('products')) {
 				$total = session('total');
@@ -121,12 +125,12 @@ class VsController extends Controller{
 		Session::put('total', $total);
 
 		Session::push('products', $product);
-		
+
 		return redirect()->route('client_viewProduct');
 
 		// return view('client_shoppingcart')->withCookie(cookie('product', $product, 45000));
 		// $cookie = Cookie('product', $product, 600);
-		
+
 		// echo $cookie;
 		// echo "done";
 	}
@@ -188,8 +192,8 @@ class VsController extends Controller{
 
 	public function viewCustomer(){
 		$users = User::all();
-   
-      
+
+
 		return view('admin_customer',['users' => $users]);
 	}
 

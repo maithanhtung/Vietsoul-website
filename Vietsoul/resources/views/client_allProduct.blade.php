@@ -38,7 +38,7 @@
          <br>
          number: {{ $product->product_number }}
          <br>
-
+         <img src="assets/images/{{$product->product_code}}a.jpg">
           <a href="./client_addcart/{{ $product->product_code }}"><button>Add to cart</button></a>
          <br>
          <br>
