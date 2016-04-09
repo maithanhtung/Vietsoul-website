@@ -88,76 +88,28 @@
                     If submitting an email form isn't your thing, you can also contact us in a few more tried and tested ways.
                 </div>
             </div>
-            <div class="col-sm-6 col-sm-offset-3  wow fadeInUp">
-                <div class="cbp-qtrotato">
-                    <strong>Phone Number</strong>
-                    <p>+64 (09) 483 7303</p>
-                    <p>Business hours are 9am to 5pm, Monday to Friday</p>
-                    <br>
-                    <strong>Postal Address</strong>
+            <div class="pfblock-header wow bounceInUp">
+                <div class="col-md-12 col-md-4">
+                    <i class="icon-screen-smartphone contact-icon"></i>
+                    <p>+358 466 143 559</p>
+                    <p>9am - 5pm, Mon - Fri</p>
+                </div>
+
+                <div class="col-md-12 col-md-4">
+                    <i class="icon-directions contact-icon"></i>
                     <p>VietSoul Ltd<p>
                     <p>Ylioppilaantie 4, 90130 Oulu, Finland<p>
+                </div>
+
+                <div class="col-md-12 col-md-4">
+                    <i class="icon-envelope contact-icon"></i>
+                    <p>Customer Support<p>
+                    <p>support@vietsoul.vn<p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Contact end -->
+<!-- Contact info end -->
 
-
-<!-- CallToAction start --  >
-   <!-- <section class="calltoaction">
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-12 col-lg-12">
-          <h2 class="wow slideInRight" data-wow-delay=".1s">ARE YOU READY TO START?</h2>
-          <div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
-           abcsejfbne
-          </div>
-        </div>
-
-        <div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
-          <a href="#contact" class="btn btn-lg">abc</a>
-        </div>
-
-      </div>
-    </div>
-  </section> -->
-
-  <!-- CallToAction end -->
-
-  <!-- <br>
-    <h3>Drop us a line :</h3>
-    <br>
-         <div class="container">
-            {!! Form::open(array('route' => 'postMessage')) !!}
-             <table style="width:100%; text-align:left;">
-                <tr>
-                  <th></th>
-                  <th></th>
-                </tr>
-           <tr>
-             <td>Name: </td>
-             <td> {!! Form::input('string', 'name') !!}</td>
-          </tr>
-
-            <tr>
-             <td>Mail :</td>
-             <td>{!! Form::input('string', 'email') !!}</td>
-           </tr>
-
-           <tr>
-             <td> Content :</td>
-             <td> {!! Form::input('string', 'content') !!}</td>
-          </tr>
-
-              </table>
-       <br>
-            {!! Form::submit('Send') !!}
-
-            {!! Form::close() !!}
-
-        </div> -->
 @stop

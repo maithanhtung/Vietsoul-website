@@ -102,11 +102,11 @@
 				<div class="col-sm-12">
 
 					<ul class="social-links">
-						<li><a href="{{ url('https://www.facebook.com/VietSoulTM/') }}" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="{{ url('https://twitter.com/VietSoulTM') }}" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="{{ url('https://www.facebook.com/VietSoulTM/') }}" class="wow bounceInUp"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="{{ url('https://twitter.com/VietSoulTM') }}" class="wow bounceInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
 						<li><a href="{{ url('https://plus.google.com/u/0/110977259142902681529/posts') }}" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="{{ url('https://www.pinterest.com/ken_91vn/') }}" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="{{ url('/') }}" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="{{ url('https://www.pinterest.com/ken_91vn/') }}" class="wow bounceInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="{{ url('https://www.instagram.com/vietsoulshop/') }}" class="wow bounceInUp" data-wow-delay=".5s"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 
 					<p class="heart">
