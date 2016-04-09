@@ -432,8 +432,8 @@ textarea.form-control {
 	background-color: #EC2217;
 }
 
-.remove-icon:hover {
-	opacity: 0.65;
+.remove-icon:hover, .myCart-icon:hover, .myAccount-icon:hover {
+	opacity: 0.55;
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
