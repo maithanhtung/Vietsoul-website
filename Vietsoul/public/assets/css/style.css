@@ -797,7 +797,7 @@ textarea.form-control {
 /*---------------*/
 
 figure.effect-bubba {
-	background: #9e5406;
+	background: #000;
 }
 
 figure.effect-bubba img {
@@ -853,6 +853,7 @@ figure.effect-bubba p {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(0,20px,0);
 	transform: translate3d(0,20px,0);
+	font-size: 1em;
 }
 
 figure.effect-bubba:hover figcaption::before,

@@ -76,13 +76,35 @@
             			<li><a href="./client_aboutUs">About Us</a></li>
 						<li><a href="./client_customerService">Customer Service</a></li>
 					</ul>
+
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="./client_login">
-							<img src="assets/icon/myAccount.png" title="My Account" class="myAccount-icon">
-						</a></li>
-						<li><a href="./client_myCart">
-						<img src="assets/icon/myCart.png" title="My Cart" class="myCart-icon">
-						</a></li>
+
+						<!-- <li>@if (Auth::check())
+							<a>Welcome {{ Auth::user()->name }}</a>
+							@endif
+						</li> -->
+
+						<li>
+							<a href="./client_login">
+								@if (Auth::check())
+									Welcome {{ Auth::user()->name }}
+								@endif
+								<img src="assets/icon/myAccount.png" title="My Account" class="myAccount-icon">
+							</a>
+						</li>
+						<li>
+							<a href="./client_myCart">
+								<img src="assets/icon/myCart.png" title="My Cart" class="myCart-icon">
+								@if ( Session::has('products'))
+									{{ count(Session::get('products')) }}
+								@endif
+							</a>
+						</li>
+						<!-- <li>
+							@if ( Session::has('products'))
+						{{ count(Session::get('products')) }}
+						@endif
+						</li> -->
 					</ul>
 				</div>
 

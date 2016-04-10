@@ -68,7 +68,7 @@
             @if($total != 0)
                 <div class="col-xs-6"></div>
                 <div class="col-xs-6">
-                    <strong>TOTAL: {{ $total }} USD</strong>
+                    <strong>TOTAL:  {{ $total }} USD</strong>
                     <p>Delivery: Free</p>
                 </div>
                 <div class="row">

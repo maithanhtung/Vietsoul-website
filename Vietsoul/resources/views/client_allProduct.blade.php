@@ -34,9 +34,7 @@
          <br>
          price: {{ $product->product_price }}
          <br>
-         Description: {{ $product->product_description }}<!--  Category end -->
-         <br>
-         number: {{ $product->product_number }}
+         Description: {{ $product->product_description }}
          <br>
          <img src="assets/images/{{$product->product_code}}a.jpg">
           <a href="./client_addcart/{{ $product->product_code }}"><button>Add to cart</button></a>
@@ -71,20 +69,39 @@
 
 
             <div class="row">
-
-                <div class="col-xs-12 col-sm-4 col-md-4">
-
-                    <div class="grid wow zoomIn">
-                        <figure class="effect-bubba">
-                            <img src="assets/images/item-1.jpg" alt="img01"/>
-                            <figcaption>
-                                <h2>Lorem Ipsum </h2>
-                                <p>Add to cart</p>
-                            </figcaption>
-                        </figure>
+                @foreach ($products as $product)
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <div class="grid wow zoomIn">
+                            <figure class="effect-bubba">
+                                <img src="assets/images/{{$product->product_code}}a.jpg">
+                                <figcaption>
+                                    <h2>{{ $product->product_name }}</h2>
+                                    <p>$ {{ $product->product_price }}</p>
+                                    <a href="#" data-toggle="modal" data-target="#{{ $product->product_code }}">View more</a>
+                                </figcaption>
+                            </figure>
+                            <a href="./client_addcart/{{ $product->product_code }}"><button>Add to cart</button></a>
+                        </div>
                     </div>
-
-                </div>
+                    <div class="modal fade" id="{{ $product->product_code }}" tabindex="-1" role="dialog" aria-labelledby="Modal-labelVS">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="Modal-labelVS">{{ $product->product_name }}</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="assets/images/{{$product->product_code}}a.jpg" alt="img01" class="img-responsive" />
+                                    <div class="modal-works"><span>baba</span><span>fuck</span></div>
+                                     <p>Description: {{ $product->product_description }}</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 @endforeach
 
                 <div class="col-xs-12 col-sm-4 col-md-4">
 
