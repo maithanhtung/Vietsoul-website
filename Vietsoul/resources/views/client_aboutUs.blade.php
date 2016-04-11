@@ -1,4 +1,4 @@
-@extends('client_template')
+@extends('layouts.client_template')
 @section('content')
  <!-- Services start -->
 

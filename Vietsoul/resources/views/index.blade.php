@@ -1,4 +1,4 @@
-@extends('client_template')
+@extends('layouts.client_template')
 @section('banner')
 <!-- Home start -->
 
