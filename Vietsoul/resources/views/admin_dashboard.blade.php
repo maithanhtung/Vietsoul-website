@@ -11,6 +11,8 @@
     Sold total: {{ $sold }} USD
     <br>
     Profit: {{ $profit}} USD
+    <br>
+    Cost: {{ $cost }} USD
     
      
     
