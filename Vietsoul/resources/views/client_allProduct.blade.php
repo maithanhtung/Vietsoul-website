@@ -26,7 +26,7 @@
 
 <!--  Output start-->
 
-    <div class="container" id="productItem">
+ <!--    <div class="container" id="productItem">
         @foreach ($products as $product)
        code: {{ $product->product_code }}
         <br>
@@ -42,12 +42,11 @@
          <br>
         @endforeach
     </div>
-
+ -->
 <!--  Output end -->
 
 
-
-<!-- List Product design start -->
+<!-- List Product start -->
 
     <section id="productList" class="pfblock">
         <div class="container">
@@ -73,16 +72,17 @@
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="grid wow zoomIn">
                             <figure class="effect-bubba">
-                                <img src="assets/images/{{$product->product_code}}a.jpg">
+                                <img src="assets/images/{{$product->product_code}}a.jpg" class="img-responsive">
                                 <figcaption>
                                     <h2>{{ $product->product_name }}</h2>
-                                    <p>$ {{ $product->product_price }}</p>
                                     <a href="#" data-toggle="modal" data-target="#{{ $product->product_code }}">View more</a>
+                                    <p>$ {{ $product->product_price }}</p>
                                 </figcaption>
                             </figure>
                             <a href="./client_addcart/{{ $product->product_code }}"><button>Add to cart</button></a>
                         </div>
                     </div>
+
                     <div class="modal fade" id="{{ $product->product_code }}" tabindex="-1" role="dialog" aria-labelledby="Modal-labelVS">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
@@ -92,7 +92,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <img src="assets/images/{{$product->product_code}}a.jpg" alt="img01" class="img-responsive" />
-                                    <div class="modal-works"><span>baba</span><span>fuck</span></div>
+                                    <div class="modal-works"><span></span><span></span></div>
                                      <p>Description: {{ $product->product_description }}</p>
                                 </div>
                                 <div class="modal-footer">
@@ -103,78 +103,7 @@
                     </div>
                  @endforeach
 
-                <div class="col-xs-12 col-sm-4 col-md-4">
-
-                    <div class="grid wow zoomIn">
-                        <figure class="effect-bubba">
-                            <img src="assets/images/item-2.jpg" alt="img01"/>
-                            <figcaption>
-                                <h2>Lorem Ipsum </h2>
-                                <p>Add to cart</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-4">
-
-                    <div class="grid wow zoomIn">
-                        <figure class="effect-bubba">
-                            <img src="assets/images/item-3.jpg" alt="img01"/>
-                            <figcaption>
-                                <h2>Lorem Ipsum </h2>
-                                <p>Add to cart</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-4">
-
-                    <div class="grid wow zoomIn">
-                        <figure class="effect-bubba">
-                            <img src="assets/images/item-4.jpg" alt="img01"/>
-                            <figcaption>
-                                <h2>Lorem Ipsum </h2>
-                                <p>Add to cart</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-4">
-
-                    <div class="grid wow zoomIn">
-                        <figure class="effect-bubba">
-                            <img src="assets/images/item-5.jpg" alt="img01"/>
-                            <figcaption>
-                                <h2>Lorem Ipsum </h2>
-                                <p>Add to cart</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-
-                <div class="col-xs-12 col-sm-4 col-md-4">
-
-                    <div class="grid wow zoomIn">
-                        <figure class="effect-bubba">
-                            <img src="assets/images/item-6.jpg" alt="img01"/>
-                            <figcaption>
-                                <h2>Lorem Ipsum </h2>
-                                <p>Add to cart</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-
-            </div>
-
+            </div><!-- .row-->
 
         </div><!-- .contaier -->
 

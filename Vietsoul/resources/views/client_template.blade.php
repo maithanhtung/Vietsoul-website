@@ -53,7 +53,7 @@
 
 	<!-- Navigation start -->
 
-	<header class="header">
+	<header class="header" id="">
 
 		<nav class="navbar navbar-custom" role="navigation">
 
@@ -72,9 +72,9 @@
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-center">
-						<li><a href="./client_allProduct">Product</a></li>
-            			<li><a href="./client_aboutUs">About Us</a></li>
-						<li><a href="./client_customerService">Customer Service</a></li>
+						<li><a href="{{ url('/client_allProduct') }}">Product</a></li>
+            			<li><a href="{{ url('/client_aboutUs') }}">About Us</a></li>
+						<li><a href="{{ url('/client_customerService') }}">Customer Service</a></li>
 					</ul>
 
 					<ul class="nav navbar-nav navbar-right">
@@ -85,7 +85,7 @@
 						</li> -->
 
 						<li>
-							<a href="./client_login">
+							<a href="{{ url('/client_login') }}">
 								@if (Auth::check())
 									Welcome {{ Auth::user()->name }}
 								@endif
@@ -93,7 +93,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="./client_myCart">
+							<a href="{{ url('/client_myCart') }}">
 								<img src="assets/icon/myCart.png" title="My Cart" class="myCart-icon">
 								@if ( Session::has('products'))
 									{{ count(Session::get('products')) }}
