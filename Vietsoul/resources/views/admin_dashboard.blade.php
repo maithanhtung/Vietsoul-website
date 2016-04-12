@@ -61,7 +61,7 @@
 @endsection
 
 @section ('content')
- Message count: {{ $message }}
+    Message count: {{ $message }}
     <br>
     Order count: {{ $order }}
     <br>
@@ -72,7 +72,26 @@
     Profit: {{ $profit}} USD
     <br>
     Cost: {{ $cost }} USD
+    <br>
+    Bestproduct : {{ $bestproduct}}, take {{ $bestsold }}% of total sold products
+    <br>
+   
 
+
+
+    <br>
+    Total : {{ $total }} product(s)
+    <br>
+    Clothing : {{ $numclot }} product(s) , {{ $percentclot}}% of total products
+    <br>
+    Accessories : {{ $numacc }} product(s) , {{ $percentacc }}% of total products
+    <br>
+    Toys : {{ $numtoy }} product(s) , {{ $percenttoy }}% of total products
+    <br>
+    Artworks : {{ $numart }} product(s) , {{ $percentart }}% of total products
+    <br>
+    Others : {{ $numoth }} product(s) , {{ $percentoth }}% of total products
+    <br>
 @endsection
 
 

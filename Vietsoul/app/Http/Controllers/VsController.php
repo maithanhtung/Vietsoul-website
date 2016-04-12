@@ -204,19 +204,73 @@ class VsController extends Controller{
 
 	public function viewDashboard(){
 		$dashboards = array();
-		$dashboards['order'] = Order::count();
-		$dashboards['message'] = Message::count();
-		$dashboards['user'] = User::count();
+		$dashboards['order']    = Order::count();
+		$dashboards['message']  = Message::count();
+		$dashboards['user']     = User::count();
+		$dashboards['products'] = Product::count();
 		$product_code = Order::pluck('product_code');
-		$sold = 0;
+		$sold   = 0;
+		$cloth  = 0;
+		$access =0;
+		$toy    = 0;
+		$art    = 0;
+		$other  = 0;
+
 		foreach ($product_code as $code ) {
 			$product = Product::where('product_code',$code)->first();
 			$price = $product['product_price'];
 			$sold = $sold + $price;
+			if (strpos($code, 'clot') !== false) {
+				$cloth = $cloth + 1;
+			}
+			if (strpos($code, 'acc') !== false) {
+				$access = $access + 1;
+			}
+			if (strpos($code, 'toy') !== false) {
+				$toy = $toy + 1;
+			}
+			if (strpos($code, 'art') !== false) {
+				$art = $art + 1;
+			}
+			if (strpos($code, 'oth') !== false) {
+				$other = $other + 1;
+			}
+
 		}
-		$dashboards['sold'] = $sold;
-		$dashboards['profit'] = $sold * 2 /5;
-		$dashboards['cost'] = $sold * 3 / 5;
+		$max = max($cloth, $access, $toy, $art, $other);
+		$dashboards['sold']     = $sold;
+		$dashboards['profit']   = $sold * 2 /5;
+		$dashboards['cost']     = $sold * 3 / 5;
+		$dashboards['bestsold'] = $max  / $dashboards['order'] * 100;
+
+		if ($cloth == $max ) {
+			$dashboards['bestproduct'] = ' Clothing ';
+		}
+		elseif ($max == $access) {
+			$dashboards['bestproduct'] = ' Accessories ';
+		}
+		elseif ($max == $toy){
+			$dashboards['bestproduct'] = ' Toys ';
+		}
+		elseif ($max == $art) {
+			$dashboards['bestproduct'] = ' Artwork ';
+		}
+		else {
+			$dashboards['bestproduct'] = ' Others ';
+		}
+
+		$dashboards['numclot'] = Product::where('product_code','like','clot%')->count();
+		$dashboards['numacc']  = Product::where('product_code','like','acc%')->count();
+		$dashboards['numtoy']  = Product::where('product_code','like','toy%')->count();
+		$dashboards['numart']  = Product::where('product_code','like','art%')->count();
+		$dashboards['numoth']  = Product::where('product_code','like','oth%')->count();
+		$dashboards['total']   = Product::all()->count();
+
+		$dashboards['percentclot'] = round($dashboards['numclot'] / $dashboards['total'] *100,2);
+		$dashboards['percentacc']  = round($dashboards['numacc'] / $dashboards['total'] *100,2);
+		$dashboards['percenttoy']  = round($dashboards['numtoy'] / $dashboards['total'] *100,2);
+		$dashboards['percentart']  = round($dashboards['numart'] / $dashboards['total'] *100,2);
+		$dashboards['percentoth']  = round($dashboards['numoth'] / $dashboards['total'] *100,2);
 
 		 return view('admin_dashboard', $dashboards);
 	}
