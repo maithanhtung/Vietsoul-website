@@ -12,17 +12,17 @@
         <a href="{{ url('/admin_dashboard') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
     </li>
     <li>
-        <a href="{{ url('/admin_product') }}"><i class="fa fa-desktop"></i> Product </a>
+        <a href="{{ url('/admin_product') }}"><i class="fa fa-tag"></i> Product </a>
     </li>
     <li>
         <a href="{{ url('/admin_newOrders') }}"><i class="fa fa-bar-chart-o"></i> Orders </a>
     </li>
     <li>
-        <a href="{{ url('/admin_customer') }}"><i class="fa fa-qrcode"></i> Customer Account</a>
+        <a href="{{ url('/admin_customer') }}"><i class="fa fa-users"></i> Customer Account</a>
     </li>
 
     <li>
-        <a href="{{ url('/admin_message') }}" class="active-menu"><i class="fa fa-table"></i> Messages </a>
+        <a href="{{ url('/admin_message') }}" class="active-menu"><i class="fa fa-comments"></i> Messages </a>
     </li>
     <li>
         <a href="{{ url('/admin_faq') }}"><i class="fa fa-edit"></i> FAQ Update </a>
