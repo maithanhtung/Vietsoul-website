@@ -235,13 +235,16 @@
                 <!-- /.dropdown -->
             </ul>
         </nav>
+
+
         <!--/. NAV TOP END  -->
+
 
         <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
-
-                    <li>
+                @yield('sidebar')
+                    <!-- <li>
                         <a href="{{ url('/admin_dashboard') }}"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
@@ -290,7 +293,7 @@
                     </li>
                     <li>
                         <a class="active-menu" href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div>
