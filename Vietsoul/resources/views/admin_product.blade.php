@@ -81,8 +81,9 @@
       <button type="submit">Delete</button>
       {{ Form::close() }}
       <a href="./admin_editproduct/{{ $product->product_code }}"><button>Edit</button></a>
-
-      @endforeach -->
+    <br>
+    <br>
+      @endforeach 
 
 
 

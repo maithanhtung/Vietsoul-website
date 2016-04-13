@@ -12,6 +12,7 @@
 */
 use Illuminate\Http\Response;
 
+// -------------------------------------CLIENT---------------------------------
 Route::get('/',function(){  
 	return view('index'); });
 
@@ -55,55 +56,68 @@ Route::get('/client_myCart',function(){
 Route::get('/client_order', [ 'middleware' => 'auth',
     'uses' => 'VsController@order'])->name('client_order');
 
-// ------------------------------------------------------------------------------------------
 
-route::get('/admin_dashboard', ['middleware' => 'auth',
-    'uses' =>'VsController@viewDashboard'])->name('admin_dashboard');
+
+
+// ------------------------------------ADMIN------------------------------------------------------
+
+
+Route::group(['middleware' => ['auth', 'admin']], function (){
+
+Route::get('/admin_dashboard', ['middleware' => 'auth',
+    'uses' =>'AdminController@viewDashboard'])->name('admin_dashboard');
 
 Route::get('/admin_product',  ['middleware' => 'auth',
-    'uses' =>'VsController@viewProduct_admin'])->name('viewadminProduct');
+    'uses' =>'AdminController@viewProduct_admin'])->name('viewadminProduct');
 
 Route::get('/admin_addproduct',function(){
 	return view('admin_addproduct'); })->name('admin_addproduct');
 
-route::delete('/admin_product/{product_code}', array('uses' => 'VsController@delProduct', 'as' => 'delProduct'));
+Route::delete('/admin_product/{product_code}', array('uses' => 'AdminController@delProduct', 'as' => 'delProduct'));
 
-Route::get('/admin_editproduct/{product_code}','VsController@vieweditProduct')->name('vieweditProduct');
+Route::get('/admin_editproduct/{product_code}','AdminController@vieweditProduct')->name('vieweditProduct');
 
-Route::post('/admin_editproduct/{product_code}','VsController@posteditProduct')->name('posteditProduct');
+Route::post('/admin_editproduct/{product_code}','AdminController@posteditProduct')->name('posteditProduct');
 
-Route::post('/admin_addproduct','VsController@postProduct')->name('postProduct');
+Route::post('/admin_addproduct','AdminController@postProduct')->name('postProduct');
 
-route::get('/admin_message',  ['middleware' => 'auth',
-    'uses' =>'VsController@viewMessage'])->name('admin_message');
+Route::get('/admin_message',  ['middleware' => 'auth',
+    'uses' =>'AdminController@viewMessage'])->name('admin_message');
 
-route::get('/admin_faq', ['middleware' => 'auth',
-    'uses' =>'VsController@viewFaq_admin'])->name('admin_faq');
+Route::get('/admin_faq', ['middleware' => 'auth',
+    'uses' =>'AdminController@viewFaq_admin'])->name('admin_faq');
 
-route::post('/admin_faq','VsController@postFaq')->name('postFaq');
+Route::post('/admin_faq','AdminController@postFaq')->name('postFaq');
 
-route::delete('/admin_faq/{faq_number}', array('uses' => 'VsController@delFaq', 'as' => 'delFaq'));
-
-
-route::get('/admin_newOrders',  ['middleware' => 'auth',
-    'uses' =>'VsController@viewnewOrders'])->name('admin_newOrders');
-
-route::get('/admin_procOrders',  ['middleware' => 'auth',
-    'uses' =>'VsController@viewprocOrders'])->name('admin_procOrders');
-
-route::get('/admin_trashOrders',  ['middleware' => 'auth',
-    'uses' =>'VsController@viewtrashOrders'])->name('admin_trashOrders');
-
-Route::get('/admin_addprocOrders/{order_id}','VsController@postprocOrders')->name('addprocOrders');
-
-Route::get('/admin_addtrashOrders/{order_id}','VsController@posttrashOrders')->name('addtrashOrders');
+Route::delete('/admin_faq/{faq_number}', array('uses' => 'AdminController@delFaq', 'as' => 'delFaq'));
 
 
-route::get('/admin_customer', ['middleware' => 'auth',
-    'uses' =>'VsController@viewCustomer'])->name('admin_customer');
+Route::get('/admin_newOrders',  ['middleware' => 'auth',
+    'uses' =>'AdminController@viewnewOrders'])->name('admin_newOrders');
 
-Route::get('/admin_cusOrders/{user_id}','VsController@viewcusOrders')->name('viewcustomerOrders');
+Route::get('/admin_procOrders',  ['middleware' => 'auth',
+    'uses' =>'AdminController@viewprocOrders'])->name('admin_procOrders');
 
+Route::get('/admin_trashOrders',  ['middleware' => 'auth',
+    'uses' =>'AdminController@viewtrashOrders'])->name('admin_trashOrders');
+
+Route::get('/admin_addprocOrders/{order_id}','AdminController@postprocOrders')->name('addprocOrders');
+
+Route::get('/admin_addtrashOrders/{order_id}','AdminController@posttrashOrders')->name('addtrashOrders');
+
+Route::get('/admin_customer', ['middleware' => 'auth',
+    'uses' =>'AdminController@viewCustomer'])->name('admin_customer');
+
+Route::get('/admin_cusOrders/{user_id}','AdminController@viewcusOrders')->name('viewcustomerOrders');
+
+
+});
+
+// Route::post('/admin_login','AdminController@login')->name('login');
+
+// Route::get('/adminst', ['middleware' => ['auth', 'admin'], function() {
+//     return "this page requires that you be logged in and an Admin";
+// }]);
 ?>
 <!-- Route::auth();
 

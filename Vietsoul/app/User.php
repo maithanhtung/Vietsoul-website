@@ -23,4 +23,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function isAdmin()
+    {
+            if ($this->email == 'tung@gmail.com') {
+                return true;
+            }
+
+            return false;
+    }
+
 }
