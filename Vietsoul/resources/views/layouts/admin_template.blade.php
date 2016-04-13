@@ -6,9 +6,11 @@
     <title>VietSoul Admin Page</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
-     <!-- FontAwesome Styles-->
+    <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-        <!-- Custom Styles-->
+    <!-- Animation Styles-->
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <!-- Custom Styles-->
     <link href="assets/css/admin-styles.css" rel="stylesheet" />
      <!-- Google Fonts-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
@@ -24,7 +26,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/admin_dashboard') }}"><i class="fa fa-comments"></i> <strong> Viet Soul </strong></a>
+                <a class="navbar-brand" href="{{ url('/admin_dashboard') }}"><i class="fa fa-gift"></i> <strong> Viet Soul </strong></a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
