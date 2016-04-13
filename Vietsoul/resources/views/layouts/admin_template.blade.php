@@ -12,6 +12,7 @@
     <link href="assets/css/admin-styles.css" rel="stylesheet" />
      <!-- Google Fonts-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
 </head>
 <body>
     <div id="wrapper">

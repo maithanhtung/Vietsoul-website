@@ -250,7 +250,7 @@ width:100%;
 }
 
 .green {
-background-color: #ef5350;
+background-color: #2ECC71;
 color: #fff;
 }
 
@@ -264,8 +264,8 @@ background-color: #FB5651;
 color:#fff;
 }
 
-  .brown {
-background-color: #E6A548;
+  .yellow {
+background-color: #FFD740;
 color:#fff;
 }
 
@@ -534,6 +534,24 @@ background-color: #FFF;
 }
 ul.dropdown-menu.dropdown-messages li a div {
   padding: 2px 0;
+}
+
+/*----------------------------------------------
+    CARDS
+------------------------------------------------*/
+.card {
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    float: right;
+    display: inline-block;
+}
+
+.card-content > .title {
+    font-size: 2.5em;
 }
 
 /*----------------------------------------------
