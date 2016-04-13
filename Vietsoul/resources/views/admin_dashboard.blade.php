@@ -113,7 +113,7 @@
             <a href="#">
                 <div class="card red summary-inline">
                     <div class="card-body">
-                        <i class="icon fa fa-inbox fa-4x"></i>
+                        <i class="icon fa fa-tag fa-4x"></i>
                         <div class="card-content">
                             <div class="title"> {{ $total }} </div>
                             <div class="sub-title">New Products</div>
