@@ -14,7 +14,7 @@
     <br>
     Updated at: {{ $order->updated_at }}
     <br>
-      <a href="./admin_addtrashOrders/{{ $order->order_id }}"><button>Delete</button></a>
+      <a href="./admin_addtrashProcOrders/{{ $order->order_id }}"><button>Delete</button></a>
 
       <br>
       <br>

@@ -40,13 +40,13 @@ class AdminController extends Controller{
 		$product_price = $request->input('product_price');
 		$product_number = $request->input('product_number');
 		DB::table('products')->insert(array('product_code' => $product_code,'product_name' => $product_name,'product_price' => $product_price,'product_description' => $product_description,'product_number' => $product_number));
-     echo "done";
+     return redirect()->back()->with('product_name', $product_name);
 	}
 
 
 	public function delProduct($product_code){
 		Product::where('product_code',$product_code)->delete();
-				echo "Sucessfully";
+		return redirect()->route('viewadminProduct');
 	}
 
 	public function vieweditProduct($product_code){
@@ -58,7 +58,7 @@ class AdminController extends Controller{
 	public function posteditProduct($product_code,Request $request){
 		Product::where('product_code',$product_code)->update(['product_code' => $request->input('product_code'),'product_name' => $request->input('product_name'),'product_price' => $request->input('product_price'),'product_description' => $request->input('product_description'),'product_number' => $request->input('product_number'),
 			]);
-		echo 'done';
+		return redirect()->route('viewadminProduct');
 	}
 
 	public function viewProduct_admin(){
@@ -166,12 +166,12 @@ class AdminController extends Controller{
 		$faq_answer = $request->input('faq_answer');
 		$faq_number = $request->input('faq_number');
 		DB::table('faqs')->insert(array('faq_question' => $faq_question,'faq_answer' => $faq_answer,'faq_number' => $faq_number));
-     echo "done";
+     return redirect()->route('admin_faq');
 	}
 
 	public function delFaq($faq_number){
 		Faq::where('faq_number',$faq_number)->delete();
-				echo "Sucessfully";
+		return redirect()->route('admin_faq');
 	}
 
 	public function viewnewOrders(){
@@ -196,11 +196,16 @@ class AdminController extends Controller{
 
 	public function postprocOrders($order_id){
 		Order::where('order_id',$order_id)->update(['order_process' => 'YES']);
-		echo 'done';
+		return redirect()->route('admin_newOrders');
 	}
 
 	public function posttrashOrders($order_id){
 		Order::where('order_id',$order_id)->update(['order_process' => 'NO', 'order_trash' => 'YES']);
-		echo 'done';
+		return redirect()->route('admin_newOrders');
+	}
+
+	public function posttrashProcOrders($order_id){
+		Order::where('order_id',$order_id)->update(['order_process' => 'NO', 'order_trash' => 'YES']);
+		return redirect()->route('admin_procOrders');
 	}
 }

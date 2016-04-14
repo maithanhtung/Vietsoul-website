@@ -62,7 +62,8 @@
 @endsection
 
 @section ('content')
-  <h3>Customer</h3>
+    <h3>Customer</h3>
+    <br>
     @foreach ($users as $user)
     Id: {{ $user->id }}
     <br>

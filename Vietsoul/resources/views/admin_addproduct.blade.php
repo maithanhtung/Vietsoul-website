@@ -41,7 +41,15 @@
         	{!! Form::submit('Send') !!}
 
         	{!! Form::close() !!}
-
         </div>
+          <br>
+           <a href="{{ url('/admin_product') }}" ><button>Back</button></a>
+
+         @if(!empty(Session::get('product_name')))
+         <h2>Sucessfully added product {{ Session::get('product_name')}}</h2>
+         @endif
+    </div>
+  </div>
+
     </body>
 </html>

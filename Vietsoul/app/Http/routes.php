@@ -105,6 +105,8 @@ Route::get('/admin_addprocOrders/{order_id}','AdminController@postprocOrders')->
 
 Route::get('/admin_addtrashOrders/{order_id}','AdminController@posttrashOrders')->name('addtrashOrders');
 
+Route::get('/admin_addtrashProcOrders/{order_id}','AdminController@posttrashProcOrders')->name('addtrashProcOrders');
+
 Route::get('/admin_customer', ['middleware' => 'auth',
     'uses' =>'AdminController@viewCustomer'])->name('admin_customer');
 

@@ -68,20 +68,23 @@
                   <th></th>
                   <th></th>
                 </tr>
-           <tr>
+
+          <tr>
+             <td> Number :</td>
+             <td> {!! Form::input('integer', 'faq_number') !!}</td>
+          </tr>
+
+          <tr>
              <td>Question: </td>
              <td> {!! Form::input('string', 'faq_question') !!}</td>
           </tr>
 
-            <tr>
+          <tr>
              <td>Answer :</td>
              <td>{!! Form::input('string', 'faq_answer') !!}</td>
-           </tr>
-
-           <tr>
-             <td> Number :</td>
-             <td> {!! Form::input('integer', 'faq_number') !!}</td>
           </tr>
+
+          
 
               </table>
        <br>
