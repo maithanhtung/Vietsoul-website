@@ -89,14 +89,10 @@
                 </div>
             </div>
             </div>
-
-
-
-              <div class="col-md-12 col-md-4"></div>
-                <div class="col-md-12 col-md-4">
-                    <a href="./client_allProduct"><button class="btn btn-lg btn-block wow fadeInUp animated">Continue to shopping</button></a>
-                </div>
-
+            <div class="col-md-12 col-md-4"></div>
+            <div class="col-md-12 col-md-4">
+                <a href="./client_allProduct"><button class="btn btn-lg btn-block wow fadeInUp animated">Come back to shopping</button></a>
+            </div>
 
         @endif
 
