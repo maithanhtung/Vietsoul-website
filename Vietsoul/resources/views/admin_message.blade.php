@@ -63,11 +63,12 @@
 
 @section ('content')
    @foreach ($messages as $message)
-    {{ $message->message_name }}
+    NAME: {{ $message->message_name }}
     <br>
-    {{ $message->message_email }}
+    EMAIL: {{ $message->message_email }}
     <br>
-   {{ $message->message_content }}
+   CONTENT: {{ $message->message_content }}
+    <br>
     <br>
         @endforeach
 

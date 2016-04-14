@@ -116,7 +116,12 @@ class AdminController extends Controller{
 		$dashboards['sold']     = $sold;
 		$dashboards['profit']   = $sold * 2 /5;
 		$dashboards['cost']     = $sold * 3 / 5;
-		$dashboards['bestsold'] = $max  / $dashboards['order'] * 100;
+		if ($dashboards['order'] == 0) {
+		    $dashboards['bestsold'] = 0;
+		}
+		else{
+		$dashboards['bestsold'] = round($max  / $dashboards['order'] * 100,2);
+		}
 
 		if ($cloth == $max ) {
 			$dashboards['bestproduct'] = ' Clothing ';
