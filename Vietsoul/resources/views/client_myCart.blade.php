@@ -11,25 +11,12 @@
                 All selected items
             </div>
         </div>
-
-        <div class="pfblock-header wow fadeInUp animated">
-            <div class="pfblock-subtitle">
-                <div class="notice-nothing">
                     <?php
                       if (Session::has('products')){
                         $products = session('products');
                         $total = session('total');
                       }
-                      else {
-                        echo "<p>";
-                        echo "Your cart is now empty!";
-                        echo "</p>";
-                      }
                     ?>
-                </div>
-            </div>
-        </div>
-
         @if((Session::has('products')))
         <div class="pfblock-subtitle">
             <table class="table table-responsive table-striped table-hover">
@@ -64,6 +51,7 @@
                    </tbody>
             </table>
 
+
             <div class="pfblock-header pfblock-subtitle">
             @if($total != 0)
                 <div class="col-xs-6"></div>
@@ -92,6 +80,24 @@
             </div>
 
         </div>
+
+         @else
+            <div class="pfblock-header wow fadeInUp animated">
+            <div class="pfblock-subtitle">
+                <div class="notice-nothing">
+                        <p>Your cart is now empty!</p>
+                </div>
+            </div>
+            </div>
+
+
+
+              <div class="col-md-12 col-md-4"></div>
+                <div class="col-md-12 col-md-4">
+                    <a href="./client_allProduct"><button class="btn btn-lg btn-block wow fadeInUp animated">Continue to shopping</button></a>
+                </div>
+
+
         @endif
 
     </div>
