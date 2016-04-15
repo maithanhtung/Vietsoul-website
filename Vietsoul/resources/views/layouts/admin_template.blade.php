@@ -277,6 +277,8 @@
 
     <!-- JS Scripts-->
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
       <!-- Bootstrap Js -->
