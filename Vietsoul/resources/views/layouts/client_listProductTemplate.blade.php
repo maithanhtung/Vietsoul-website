@@ -50,7 +50,7 @@
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="grid wow zoomIn">
                             <figure class="effect-bubba">
-                                <img src="assets/images/{{$product->product_code}}a.jpg" class="img-responsive">
+                                <img src="assets/images/{{$product->product_code}}.jpg" class="img-responsive">
                                 <figcaption>
                                     <h2>{{ $product->product_name }}</h2>
                                     <a href="#" data-toggle="modal" data-target="#{{ $product->product_code }}">View more</a>
