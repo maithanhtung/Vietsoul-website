@@ -24,7 +24,7 @@
 
    <!-- List Product start -->
 
-    <section id="productList" class="pfblock">
+    <section id="productList" class="pfblock pfblock-gray">
         <div class="container">
             <div class="row">
 
@@ -57,7 +57,7 @@
                                     <p>$ {{ $product->product_price }}</p>
                                 </figcaption>
                             </figure>
-                            <a href="./client_addcart/{{ $product->product_code }}"><button>Add to cart</button></a>
+                            <a href="./client_addcart/{{ $product->product_code }}" title="Add to Cart"><img src="assets/icon/addCart.png"></a>
                         </div>
                     </div>
 
