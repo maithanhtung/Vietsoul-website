@@ -17,7 +17,8 @@ class CreateFaqsTable extends Migration
             $table->string('faq_question');
             $table->string('faq_answer');
             $table->integer('faq_number');
-            $table->timestamps('created_at');
+            $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->dateTime('updated_at')->nullable();
         });
     }
 
@@ -28,6 +29,6 @@ class CreateFaqsTable extends Migration
      */
     public function down()
     {
-         
+        Schema::drop('faqs');
     }
 }

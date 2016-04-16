@@ -145,12 +145,22 @@ class AdminController extends Controller{
 		$dashboards['numart']  = Product::where('product_code','like','art%')->count();
 		$dashboards['numoth']  = Product::where('product_code','like','oth%')->count();
 		$dashboards['total']   = Product::all()->count();
-
+		
+		if ($dashboards['total'] == 0) {
+			$dashboards['percentclot'] = 0;
+			$dashboards['percentacc'] = 0;
+			$dashboards['percenttoy'] = 0;
+			$dashboards['percentart'] = 0;
+			$dashboards['percentoth']= 0;
+		}
+		else{
 		$dashboards['percentclot'] = round($dashboards['numclot'] / $dashboards['total'] *100,2);
 		$dashboards['percentacc']  = round($dashboards['numacc'] / $dashboards['total'] *100,2);
 		$dashboards['percenttoy']  = round($dashboards['numtoy'] / $dashboards['total'] *100,2);
 		$dashboards['percentart']  = round($dashboards['numart'] / $dashboards['total'] *100,2);
 		$dashboards['percentoth']  = round($dashboards['numoth'] / $dashboards['total'] *100,2);
+		}
+		
 
 		 return view('admin_dashboard', $dashboards);
 	}

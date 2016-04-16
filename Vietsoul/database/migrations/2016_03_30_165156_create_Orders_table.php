@@ -18,7 +18,8 @@ class CreateOrdersTable extends Migration
             $table->integer('user_id');
             $table->string('order_process');
             $table->string('order_trash');
-            $table->timestamps('order_time');
+            $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->dateTime('updated_at')->nullable();
         });
     }
 
@@ -29,6 +30,6 @@ class CreateOrdersTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('orders');
     }
 }

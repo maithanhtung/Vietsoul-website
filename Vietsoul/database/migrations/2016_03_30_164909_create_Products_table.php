@@ -18,7 +18,8 @@ class CreateProductsTable extends Migration
             $table->integer('product_price');
             $table->string('product_description');
             $table->integer('product_number');
-            $table->timestamps('created_at');
+            $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->dateTime('updated_at')->nullable();
         });
     }
 
@@ -29,6 +30,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('products');
     }
 }

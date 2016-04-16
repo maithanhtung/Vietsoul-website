@@ -17,7 +17,8 @@ class CreateMessagesTable extends Migration
             $table->string('message_name');
             $table->string('message_email');
             $table->string('message_content');
-            $table->timestamps('created_at');
+            $table->dateTime('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->dateTime('updated_at')->nullable();
         });
     }
 
@@ -28,6 +29,6 @@ class CreateMessagesTable extends Migration
      */
     public function down()
     {
-           
+        Schema::drop('messages');
     }
 }
