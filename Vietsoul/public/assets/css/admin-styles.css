@@ -56,26 +56,15 @@ line-height:25px;
 padding-top:20px;
 }
 
-button {
-    -webkit-appearance: none;
-    background-size: 150%;
-    background-color: #E74430;
-    color: #FFFFFF;
-    border-image-outset: none;
-    border-color: #F4645F;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    padding: 5px;
-    margin-top: 5%;
-}
-
 input {
     margin: 10px;
     padding: 3px;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
+ i{
 
+ }
 .panel{
 border-radius:0px;
 }

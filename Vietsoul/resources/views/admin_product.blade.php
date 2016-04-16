@@ -28,45 +28,43 @@
         <a href="{{ url('/admin_faq') }}"><i class="fa fa-edit"></i> FAQ Update </a>
     </li>
 
-    <li>
-        <a href="#"><i class="fa fa-sitemap"></i> Bla<span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level">
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla<span class="fa arrow"></span></a>
-                <ul class="nav nav-third-level">
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-
-                </ul>
-
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a class="active-menu" href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
-    </li>
 @endsection
 
 
 @section ('content')
-  <a href="./admin_addproduct"><button>ADD</button></a>
-    <br>
-    <br>
-    @foreach ($products as $product)
-   code: {{ $product->product_code }}
+     <a class="btn-floating btn-large waves-effect waves-light red" href="./admin_addproduct"><i class="material-icons">+</i></a>
+  <div class="card">
+        <table class="responsive-table highlight bordered ">
+            <thead>
+                <tr>
+                    <th data-field="code">Code</th>
+                    <th data-field="name">Name</th>
+                    <th data-field="price">Price</th>
+                    <th data-field="desc">Description</th>
+                    <th data-field="number">Number</th>
+                    <th>&nbsp</th>
+                    <th>&nbsp</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach ($products as $product)
+                <tr>
+                    <td> {{ $product->product_code }} </td>
+                    <td> {{ $product->product_name }} </td>
+                    <td> $ {{ $product->product_price }} </td>
+                    <td> {{ $product->product_description }} </td>
+                    <td> {{ $product->product_number }} </td>
+                    <td> {{ Form::open(['route' => ['delProduct', $product->product_code], 'method' => 'delete']) }} <button type="submit">Delete</button> {{ Form::close() }} </td>
+                    <td> <a href="./admin_editproduct/{{ $product->product_code }}"><button>Edit</button></ </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+
+
+   <!-- code: {{ $product->product_code }}
     <br>
      name: {{ $product->product_name }}
      <br>
@@ -80,10 +78,10 @@
       {{ Form::open(['route' => ['delProduct', $product->product_code], 'method' => 'delete']) }}
       <button type="submit">Delete</button>
       {{ Form::close() }}
-      <a href="./admin_editproduct/{{ $product->product_code }}"><button>Edit</button></a>
-    <br>
-    <br>
-      @endforeach 
+      <a href="./admin_editproduct/{{ $product->product_code }}"><button>Edit</button></a> -->
+
+
+
 
 
 
