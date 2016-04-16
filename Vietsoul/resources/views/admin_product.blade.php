@@ -30,10 +30,13 @@
 
 @endsection
 
-
 @section ('content')
-     <a class="btn-floating btn-large waves-effect waves-light red" href="./admin_addproduct"><i class="material-icons">+</i></a>
-  <div class="card">
+
+    <div class="card">
+        <div class="fixed-action-btn horizontal">
+         <a title="Add a new item" class="btn-floating btn-large waves-effect waves-light blue" href="./admin_addproduct"><i class="material-icons">add</i></a>
+         </div>
+        <h5 class="card-title center">All available products</h5>
         <table class="responsive-table highlight bordered ">
             <thead>
                 <tr>
@@ -41,9 +44,9 @@
                     <th data-field="name">Name</th>
                     <th data-field="price">Price</th>
                     <th data-field="desc">Description</th>
-                    <th data-field="number">Number</th>
-                    <th>&nbsp</th>
-                    <th>&nbsp</th>
+                    <th data-field="number">Number </th>
+                    <th>Delete</th>
+                    <th>Edit</th>
                 </tr>
             </thead>
 
@@ -55,8 +58,20 @@
                     <td> $ {{ $product->product_price }} </td>
                     <td> {{ $product->product_description }} </td>
                     <td> {{ $product->product_number }} </td>
-                    <td> {{ Form::open(['route' => ['delProduct', $product->product_code], 'method' => 'delete']) }} <button type="submit">Delete</button> {{ Form::close() }} </td>
-                    <td> <a href="./admin_editproduct/{{ $product->product_code }}"><button>Edit</button></ </td>
+
+                    <td>
+                        {{ Form::open(['route' => ['delProduct', $product->product_code], 'method' => 'delete']) }}
+                            <a class="btn-floating orange">
+                                <i class="material-icons">delete</i>
+                            </a>
+                        {{ Form::close() }}
+                    </td>
+                    <td>
+                        <a href="./admin_editproduct/{{ $product->product_code }}" class="btn-floating green">
+                            <i class="material-icons">edit</i>
+                        </a>
+                    </td>
+
                 </tr>
                 @endforeach
             </tbody>
@@ -66,5 +81,5 @@
 @endsection
 
 
- 
+
 

@@ -8,6 +8,7 @@
     <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- FontAwesome Styles-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
     <!-- Animation Styles-->
@@ -93,7 +94,7 @@
     <!-- JS Scripts-->
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
     <!-- jQuery Js -->
     <script src="assets/js/jquery-1.10.2.js"></script>
       <!-- Bootstrap Js -->
@@ -102,6 +103,7 @@
     <script src="assets/js/jquery.metisMenu.js"></script>
     <!-- Smooth Scroll -->
     <script src="assets/js/smoothscroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
       <!-- Custom Js -->
     <script src="assets/js/admin-scripts.js"></script>
 
