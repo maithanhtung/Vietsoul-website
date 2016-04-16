@@ -269,40 +269,39 @@ margin-bottom: 30px;
 width:100%;
 }
 
-.green {
+.VSgreen {
 background-color: #2ECC71;
 color: #fff;
 }
 
-.green:hover {
+.VSgreen:hover {
 background-color: #27ae60;
 }
 
-.blue {
+.VSblue {
 background-color: #63A3DF;
 color: #fff
 }
 
-.blue:hover {
+.VSblue:hover {
 background-color: #2980b9;
 }
 
-
-.red {
+.VSred {
 background-color: #FB5651;
 color:#fff;
 }
 
-.red:hover {
+.VSred:hover {
 background-color: #c0392b;
 }
 
-.yellow {
+.VSyellow {
 background-color: #FFD740;
 color:#fff;
 }
 
-.yellow:hover {
+.VSyellow:hover {
 background-color: #f39c12;
 }
 
@@ -574,23 +573,31 @@ padding: 2px 0;
 }
 
 /*----------------------------------------------
-CARDS
+VScardS
 ------------------------------------------------*/
 .card {
-padding: 25px;
-margin-top: 20px;
-margin-bottom: 20px;
+padding: 1em;
+margin: 0.5em;
+min-height: 5em;
 }
 
-.card-content {
+.VScard-content {
 float: right;
 display: inline-block;
+margin-bottom: 1em;
 }
 
-.card-content > .title {
+.VScard-content > .title {
 font-size: 2.5em;
 }
 
+#vs-chart, #vs-pie-chart {
+padding: 1.5em;
+}
+
+.db-table {
+    float: right;
+}
 /*----------------------------------------------
 MEDIA QUERIES
 ------------------------------------------------*/
@@ -630,5 +637,5 @@ border-radius: 100%;
 overflow: hidden;
 margin: 14px;
 }
-}
+
 
