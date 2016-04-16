@@ -100,6 +100,8 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <!-- Metis Menu Js -->
     <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="assets/js/smoothscroll.js"></script>
       <!-- Custom Js -->
     <script src="assets/js/admin-scripts.js"></script>
 

@@ -1,6 +1,6 @@
 @extends ('layouts.admin_template')
 @section ('title')
-    DASHBOARD
+    Dashboard
 @endsection
 
 @section ('subtitle')
