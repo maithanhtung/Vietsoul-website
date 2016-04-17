@@ -60,8 +60,8 @@
                     </p>
 
                     <span class="secondary-content">
-                    <a href="./admin_addprocOrders/{{ $order->order_id }}" class="waves-effect green btn">Process</a>
-                    <a href="./admin_addtrashOrders/{{ $order->order_id }}" class="waves-effect pink btn">Delete</a>
+                        <a href="./admin_addprocOrders/{{ $order->order_id }}" class="waves-effect green btn">Process</a>
+                        <a href="./admin_addtrashOrders/{{ $order->order_id }}" class="waves-effect pink btn">Delete</a>
                     </span>
                 </li>
             @endforeach

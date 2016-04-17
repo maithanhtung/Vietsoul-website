@@ -28,92 +28,68 @@
         <a href="{{ url('/admin_faq') }}" class="active-menu"><i class="fa fa-edit"></i> FAQ Update </a>
     </li>
 
-    <li>
-        <a href="#"><i class="fa fa-sitemap"></i> Bla<span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level">
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla<span class="fa arrow"></span></a>
-                <ul class="nav nav-third-level">
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-
-                </ul>
-
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a class="active-menu" href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
-    </li>
 @endsection
 
 @section ('content')
-  <div class="container">
-            {!! Form::open(array('route' => 'postFaq')) !!}
-             <table style="width:100%; text-align:left;">
-                <tr>
-                  <th></th>
-                  <th></th>
-                </tr>
+<div class="card">
+    <h4 class="container green-text">New FAQ</h4>
+    <div class="container card-content">
+        {!! Form::open(array('route' => 'postFaq')) !!}
+            <div class="col s12">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <i class="material-icons prefix">info</i>
+                        <input id="icon_prefix" type="number" name="faq_number" class="validate" required>
+                        <label for="icon_prefix">FAQ Number</label>
+                    </div>
+                    <div class="input-field col s8">
+                        <i class="material-icons prefix">live_help</i>
+                        <input id="question" type="text" name="faq_question" class="validate" required>
+                        <label for="question">Question</label>
+                    </div>
+                </div>
 
-          <tr>
-             <td> Number :</td>
-             <td> {!! Form::input('integer', 'faq_number') !!}</td>
-          </tr>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">chat</i>
+                        <textarea id="textarea1" class="materialize-textarea" name="faq_answer" required></textarea>
+                        <label for="textarea1">Answer</label>
+                    </div>
+                </div>
+            </div>
+        <button class="btn-floating btn-large waves-effect waves-light green" id="sendFAQ" type="submit" title="Add">
+            <i class="material-icons">done</i>
+        </button>
 
-          <tr>
-             <td>Question: </td>
-             <td> {!! Form::input('string', 'faq_question') !!}</td>
-          </tr>
+          <!-- {!! Form::submit('Send') !!} -->
 
-          <tr>
-             <td>Answer :</td>
-             <td>{!! Form::input('string', 'faq_answer') !!}</td>
-          </tr>
+        {!! Form::close() !!}
+    </div>
+</div>
 
-          
+<div class="card">
+    <div class="card-content">
+        <h4 class="blue-text center">All FAQs</h4>
+        <ul class="collection">
+        @foreach ($faqs as $faq)
+        <li class="collection-item row " >
+            <p class="title col s9">{{ $faq->faq_number }}. Q: {{ $faq->faq_question }}
+            <br>A: {{ $faq->faq_answer }}</p>
+            <span class="secondary-content col s3">
+                {{ Form::open(['route' => ['delFaq', $faq->faq_number], 'method' => 'delete']) }}
+                    <button class=" btn-floating btn-large waves-effect waves-light blue" id="sendFAQ" type="submit">
+                        <i class="material-icons">delete</i>
+                    </button>
+                {{ Form::close() }}
+            </span>
+        </li>
+        @endforeach
+        </ul>
 
-              </table>
-       <br>
-          {!! Form::submit('Send') !!}
-
-          {!! Form::close() !!}
-
-        </div>
-<br>
-<br>
+    </div>
+</div>
 
 
-        ALL FAQs:
-        <br>
-           @foreach ($faqs as $faq)
-   FAQ number: {{ $faq->faq_number }}
-    <br>
-   FAQ question: {{ $faq->faq_question }}
-    <br>
-   FAQ answer: {{ $faq->faq_answer }}
-    <br>
-
-    {{ Form::open(['route' => ['delFaq', $faq->faq_number], 'method' => 'delete']) }}
-    <button type="submit">Delete</button>
-      {{ Form::close() }}
-    <br>
-    <br>
-
-      @endforeach
 
 
 

@@ -4,7 +4,7 @@
 @endsection
 
 @section ('subtitle')
-    Customer messages
+    Visitor's messages
 @endsection
 
 @section ('sidebar')
@@ -28,36 +28,7 @@
         <a href="{{ url('/admin_faq') }}"><i class="fa fa-edit"></i> FAQ Update </a>
     </li>
 
-    <li>
-        <a href="#"><i class="fa fa-sitemap"></i> Bla<span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level">
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla<span class="fa arrow"></span></a>
-                <ul class="nav nav-third-level">
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
 
-                </ul>
-
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a class="active-menu" href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
-    </li>
 @endsection
 
 
