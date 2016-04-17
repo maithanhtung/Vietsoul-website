@@ -36,7 +36,7 @@
         <div class="fixed-action-btn horizontal">
          <a title="Add a new item" class="btn-floating btn-large waves-effect waves-light red" href="./admin_addproduct"><i class="material-icons">add</i></a>
          </div>
-        <h5 class="card-title center">All available products</h5>
+        <h4 class="card-title red-text center">All Available Products</h4>
         <table class="responsive-table highlight bordered ">
             <thead>
                 <tr>

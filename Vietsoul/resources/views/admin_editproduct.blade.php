@@ -33,6 +33,7 @@
 @section ('content')
 <div class="card">
     <div class="container">
+         <h5 class="green-text center">Type new information and click GREEN button to save all</h5>
              <!-- Product:
 
             <p> product_code: {{ $products->product_code }} <br> product_name: {{ $products->product_name }} <br> product_price: {{ $products->product_price }} <br> Product_description: {{ $products->product_description }} <br> product_number {{ $products->product_number }}  </p> -->
