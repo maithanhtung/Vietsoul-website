@@ -28,59 +28,47 @@
         <a href="{{ url('/admin_faq') }}"><i class="fa fa-edit"></i> FAQ Update </a>
     </li>
 
-    <li>
-        <a href="#"><i class="fa fa-sitemap"></i> Bla<span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level">
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla<span class="fa arrow"></span></a>
-                <ul class="nav nav-third-level">
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-
-                </ul>
-
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a class="active-menu" href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
-    </li>
 @endsection
 
 @section ('content')
-   <h3>New Orders</h3>
-    <a href="./admin_newOrders"><button>admin_newOrders</button></a>
-    <a href="./admin_procOrders"><button>admin_processOrders</button></a>
-    <a href="./admin_trashOrders"><button>admin_trashOrders</button></a>
-    <br>
-    <br>
-    @foreach ($orders as $order)
-    Product code: {{ $order->product_code }}
-    <br>
-    User id: {{ $order->user_id }}
-    <br>
-    Created at: {{ $order->created_at }}
-    <br>
-    <a href="./admin_addprocOrders/{{ $order->order_id }}"><button>Process</button></a>
-      <a href="./admin_addtrashOrders/{{ $order->order_id }}"><button>Delete</button></a>
+    <div class="card">
 
-      <br>
-      <br>
-      @endforeach
+        <div class="navbar">
+            <nav>
+                <div class="nav-wrapper blue">
+                    <ul class="left hide-on-med-and-down">
+                        <li class="active"><a href="{{ url('/admin_newOrders') }}">New Orders</a></li>
+                        <li><a href="{{ url('/admin_procOrders') }}">Processing Orders</a></li>
+                        <li><a href="{{ url('/admin_trashOrders') }}">Trash</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
+        <div class="card-content">
+            <ul class="collection">
+            @foreach ($orders as $order)
+
+                <li class="collection-item avatar">
+                    <span class="title date-text">{{ $order->created_at }}</span>
+                    <img src="assets/images/{{$order->product_code}}.jpg" class="circle" alt="item-image">
+
+                    <p>
+                        User ID: {{ $order->user_id }}
+                        <br>
+                        Product Code: {{ $order->product_code }}
+                    </p>
+
+                    <span class="secondary-content">
+                    <a href="./admin_addprocOrders/{{ $order->order_id }}" class="waves-effect green btn">Process</a>
+                    <a href="./admin_addtrashOrders/{{ $order->order_id }}" class="waves-effect pink btn">Delete</a>
+                    </span>
+                </li>
+            @endforeach
+            </ul>
+        </div>
+
+    </div>
 @endsection
 
 

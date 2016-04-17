@@ -32,7 +32,8 @@
 
 @section ('content')
 
-    <div class="card">
+<div class="card">
+    <div class="">
         <div class="fixed-action-btn horizontal">
          <a title="Add a new item" class="btn-floating btn-large waves-effect waves-light red" href="./admin_addproduct"><i class="material-icons">add</i></a>
          </div>
@@ -78,7 +79,7 @@
             </tbody>
         </table>
     </div>
-
+</div>
 @endsection
 
 

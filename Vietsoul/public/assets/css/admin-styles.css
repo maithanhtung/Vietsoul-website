@@ -66,6 +66,26 @@ input {
 i {
     font-style: normal;
 }
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
 .panel{
 border-radius:0px;
 }
@@ -606,6 +626,19 @@ PRODUCT MANAGEMENT STYLES
 #editProduct-btn {
     float: right;
 }
+
+/*----------------------------------------------
+ORDERS PAGE STYLES
+------------------------------------------------*/
+img.circle {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.date-text {
+    color: blue;
+}
+
 
 /*----------------------------------------------
 MEDIA QUERIES

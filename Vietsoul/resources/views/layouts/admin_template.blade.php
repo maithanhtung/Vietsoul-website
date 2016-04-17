@@ -81,7 +81,7 @@
                 </div>
 
                  <!-- /. ROW  -->
-				 <footer><p> © 2016 LinhHangTung <a href="{{ url('/') }}">VietSoul Store</a></p></footer>
+				 <footer><p> © 2016 LinhHangTung <a href="{{ url('/') }}" class="red-text">VietSoul Store</a></p></footer>
 			</div>
 
         </div>
