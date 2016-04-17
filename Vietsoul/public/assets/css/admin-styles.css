@@ -14,7 +14,7 @@ background: #283643;
 
 #page-wrapper {
 padding: 15px 15px;
-min-height: 500px;
+min-height: 800px;
 background: #f3f3f3;
 
 }
@@ -588,6 +588,22 @@ padding: 1.5em;
 .db-table {
     float: right;
 }
+
+/*----------------------------------------------
+PRODUCT MANAGEMENT STYLES
+------------------------------------------------*/
+#addProduct-btn {
+    float: right;
+}
+
+#backProduct-btn{
+    float: left;
+}
+
+#productName-added {
+    text-transform: uppercase;
+}
+
 /*----------------------------------------------
 MEDIA QUERIES
 ------------------------------------------------*/

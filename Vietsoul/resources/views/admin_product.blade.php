@@ -61,9 +61,10 @@
 
                     <td>
                         {{ Form::open(['route' => ['delProduct', $product->product_code], 'method' => 'delete']) }}
-                            <a class="btn-floating orange">
+
+                            <button type="submit" class="btn-floating orange">
                                 <i class="material-icons">delete</i>
-                            </a>
+                            </button>
                         {{ Form::close() }}
                     </td>
                     <td>
