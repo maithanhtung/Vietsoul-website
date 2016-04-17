@@ -74,7 +74,7 @@
             </div>
 
             <a id="backProduct-btn" class="btn waves-effect waves-light blue" href="{{ url('/admin_product') }}" title="Back to see the product list">
-                <i class="material-icons">undo</i> BACK
+                <i class="material-icons">undo</i>BACK
             </a>
 
             <button id="addProduct-btn" class="btn waves-effect waves-light green" type="submit" name="action">ADD

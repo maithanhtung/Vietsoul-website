@@ -34,7 +34,7 @@
 
     <div class="card">
         <div class="fixed-action-btn horizontal">
-         <a title="Add a new item" class="btn-floating btn-large waves-effect waves-light blue" href="./admin_addproduct"><i class="material-icons">add</i></a>
+         <a title="Add a new item" class="btn-floating btn-large waves-effect waves-light red" href="./admin_addproduct"><i class="material-icons">add</i></a>
          </div>
         <h5 class="card-title center">All available products</h5>
         <table class="responsive-table highlight bordered ">
@@ -62,7 +62,7 @@
                     <td>
                         {{ Form::open(['route' => ['delProduct', $product->product_code], 'method' => 'delete']) }}
 
-                            <button type="submit" class="btn-floating orange">
+                            <button type="submit" class="btn-floating light-blue accent-4">
                                 <i class="material-icons">delete</i>
                             </button>
                         {{ Form::close() }}
