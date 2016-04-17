@@ -5,7 +5,7 @@
 @endsection
 
 @section ('subtitle')
-    All customer
+    Client's Accounts
 @endsection
 
 @section ('sidebar')
@@ -29,53 +29,48 @@
         <a href="{{ url('/admin_faq') }}"><i class="fa fa-edit"></i> FAQ Update </a>
     </li>
 
-    <li>
-        <a href="#"><i class="fa fa-sitemap"></i> Bla<span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level">
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla</a>
-            </li>
-            <li>
-                <a href="#">bla<span class="fa arrow"></span></a>
-                <ul class="nav nav-third-level">
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-                    <li>
-                        <a href="#"> Link</a>
-                    </li>
-
-                </ul>
-
-            </li>
-        </ul>
-    </li>
-    <li>
-        <a class="active-menu" href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>
-    </li>
 @endsection
 
 @section ('content')
-    <h3>Customer</h3>
-    <br>
-    @foreach ($users as $user)
-    Id: {{ $user->id }}
-    <br>
-    Name: {{ $user->name }}
-    <br>
-    Email: {{ $user->email }}
-    <br>
-    <a href="./admin_cusOrders/{{ $user->id }}"><button>View Customer's orders</button></a>
-    <br>
-    <br>
-        @endforeach
+<div class="card">
+    <h5> Registered Information</h5>
+    <div class="container card-content">
+        <table>
+            <thead>
+                <tr>
+                    <th data-field="id">ID</th>
+                    <th data-field="name">Name</th>
+                    <th data-field="price">Email</th>
+                    <th>View This Customer's Order</th>
+                </tr>
+            </thead>
 
+            <tbody>
+                @foreach ($users as $user)
+                <tr>
+                    <td>{{ $user->id }}</td>
+                    <td>{{ $user->name }}</td>
+                    <td>{{ $user->email }}</td>
+                    <td> <a class="waves-effect blue btn" href="./admin_cusOrders/{{ $user->id }}">See Orders</a></td>
+              <!--   <td>
+                    <form action="#">
+                        <p>
+                            <input type="checkbox" id="$user"/>
+                            <label for="$user">V.I.P</label>
+                        </p>
+                    </form>
+                </td> -->
+                </tr>
+                @endforeach
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+</div>
 @endsection
 
    <!--  <h3>Customer</h3>

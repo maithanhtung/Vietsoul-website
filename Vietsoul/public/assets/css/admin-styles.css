@@ -633,6 +633,7 @@ ORDERS PAGE STYLES
 img.circle {
     width: 60px !important;
     height: 60px !important;
+    padding-right: 10px !important;
 }
 
 .date-text {
