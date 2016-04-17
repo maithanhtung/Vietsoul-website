@@ -5,7 +5,7 @@
 @endsection
 
 @section ('subtitle')
-    Client's Accounts
+    All Accounts
 @endsection
 
 @section ('sidebar')
@@ -33,8 +33,11 @@
 
 @section ('content')
 <div class="card">
-    <h5> Registered Information</h5>
+
     <div class="container card-content">
+        <div class="blue-text">
+        <h5> Registered Information</h5>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -50,7 +53,7 @@
                 <tr>
                     <td>{{ $user->id }}</td>
                     <td>{{ $user->name }}</td>
-                    <td>{{ $user->email }}</td>
+                    <td class="blue-text">{{ $user->email }}</td>
                     <td> <a class="waves-effect blue btn" href="./admin_cusOrders/{{ $user->id }}">See Orders</a></td>
               <!--   <td>
                     <form action="#">
@@ -66,9 +69,6 @@
             </tbody>
         </table>
     </div>
-
-
-
 
 </div>
 @endsection
