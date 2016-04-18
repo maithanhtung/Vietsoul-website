@@ -86,6 +86,22 @@ a:active {
     color: #fff;
 }
 
+td {
+    font-size: 18px;
+}
+
+th {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 18px;
+}
+
+li {
+    font-size: 18px;
+}
+
 .panel{
 border-radius:0px;
 }
@@ -647,7 +663,33 @@ FAQ Update
     float: right;
 }
 
+.collection .collection-item {
+    border-bottom: 1px solid #64b5f6 !important;
+}
 
+.collection {
+    border: 1px solid #64b5f6 !important;
+}
+
+/*----------------------------------------------
+Messages
+-----------------------------------------------*/
+.panel-info>.panel-heading {
+    color: #FFF;
+    background-color: #e65100;
+    border: none;
+    font-size: 22px;
+}
+
+.panel-info {
+    background-color: #fbe9e7;
+    color: #bf360c;
+    border:none;
+}
+
+.panel-body {
+    font-size: 20px;
+}
 
 /*----------------------------------------------
 MEDIA QUERIES

@@ -33,16 +33,23 @@
 
 
 @section ('content')
-   @foreach ($messages as $message)
-    NAME: {{ $message->message_name }}
-    <br>
-    EMAIL: {{ $message->message_email }}
-    <br>
-   CONTENT: {{ $message->message_content }}
-    <br>
-    <br>
-        @endforeach
-
+    <div class="card">
+        <div class="container card-content">
+        <h4 class="deep-orange-text"> All Messages</h4>
+            <span class="card-content">
+                @foreach ($messages as $message)
+                    <div class="panel panel-info">
+                        <div class="card-title panel-heading">
+                            FROM: {{ $message->message_name }} - {{ $message->message_email }}
+                        </div>
+                        <div class="panel-body">
+                            "{{ $message->message_content }}"
+                        </div>
+                    </div>
+                @endforeach
+            </span>
+        </div>
+    </div>
 @endsection
 <!--
     @foreach ($messages as $message)

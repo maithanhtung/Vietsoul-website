@@ -75,7 +75,7 @@
         <li class="collection-item row " >
             <p class="title col s9">{{ $faq->faq_number }}. Q: {{ $faq->faq_question }}
             <br>A: {{ $faq->faq_answer }}</p>
-            <span class="secondary-content col s3">
+            <span class="secondary-content col s3" title="Delete this FAQ">
                 {{ Form::open(['route' => ['delFaq', $faq->faq_number], 'method' => 'delete']) }}
                     <button class=" btn-floating btn-large waves-effect waves-light blue" id="sendFAQ" type="submit">
                         <i class="material-icons">delete</i>
