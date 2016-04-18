@@ -1,4 +1,11 @@
 @extends('layouts.client_template')
+
+@section('banner')
+<section id="home" class="pfblock-image">
+    <img src="{{ asset('assets/images//banner/service.jpg') }}">
+</section>
+@stop
+
 @section('content')
 
 <!-- FAQ start -->
