@@ -9,7 +9,7 @@
 @section('content')
  <!-- Services start -->
 
-	<section id="services" class="pfblock pfblock-gray">
+	<section id="services" class="pfblock">
 		<div class="container">
 
 			<div class="row">
@@ -104,7 +104,7 @@
 
 <!-- Skills start -->
 
-    <section id="skills"  class="pfblock">
+    <section id="skills"  class="pfblock  pfblock-gray">
 
 			<div class="container">
 
@@ -161,7 +161,7 @@
 
     <!-- Testimonials start -->
 
-	<section id="testimonials" class="pfblock pfblock-gray">
+	<section id="testimonials" class="pfblock">
 
 		<div class="container">
 

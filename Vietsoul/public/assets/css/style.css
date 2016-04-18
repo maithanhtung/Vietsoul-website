@@ -356,12 +356,22 @@ textarea.form-control {
 	margin: 15px 0;
 }
 
+
+/* ---------------------------------------------- /*
+ * Product List
+/* ---------------------------------------------- */
+#category {
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+
 /* ---------------------------------------------- /*
  * Service
 /* ---------------------------------------------- */
 
 .iconbox {
-	background: #fff;
+	background: #F5F5F5;
 	border-bottom: 1px solid #d4d4d4;
 	text-align: center;
 	padding: 40px 20px;
@@ -528,7 +538,7 @@ textarea.form-control {
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-nav > li > a,
 .navbar-custom .navbar-nav .dropdown-menu > li > a {
-	font-size: 11px;
+	font-size: 13px;
 	letter-spacing: 3px;
 	color: #222;
 }

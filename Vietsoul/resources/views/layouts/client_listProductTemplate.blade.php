@@ -6,32 +6,34 @@
 @stop
 
 @section('content')
- <!--  Category start -->
 
-    <div class="container">
-        <div id="category" class="nav navbar-nav navbar-left"> <br>
-            <a href="./client_allProduct"><button>All Products</button></a>
-            <a href="./client_clotProduct"><button>Clothing</button></a>
-            <a href="./client_accProduct"><button>Accessories</button></a>
-            <a href="./client_toyProduct"><button>Toys</button></a>
-            <a href="./client_artProduct"><button>Artworks</button></a>
-            <a href="./client_otherProduct"><button>Other Products</button></a>
-        </div>
-        <div id="searchBox" class="nav navbar-nav navbar-right">
-            {!! Form::open(array('route' => 'client_searchProduct')) !!}
-            Type name here to search product: {!! Form::input('string', 'product_name') !!}
-            {!! Form::submit('Search') !!}
-            {!! Form::close() !!}
-        </div>
-    </div>
-
-    <!--  Category end -->
-
-
-   <!-- List Product start -->
-
-    <section id="productList" class="pfblock pfblock-gray">
+    <section class="">
         <div class="container">
+            <!--  Category start -->
+            <br>
+            <div id="category" class="nav navbar-nav navbar-left"> <br>
+                <a href="./client_allProduct">All Products | </a>
+                <a href="./client_clotProduct">Clothing | </a>
+                <a href="./client_accProduct">Accessories | </a>
+                <a href="./client_toyProduct">Toys | </a>
+                <a href="./client_artProduct">Artworks | </a>
+                <a href="./client_otherProduct">Other Products</a>
+            </div>
+            <!--  Category end -->
+            <br>
+            <div id="searchBox" class="nav navbar-nav navbar-right">
+                {!! Form::open(array('route' => 'client_searchProduct')) !!}
+                Type name here to search product: {!! Form::input('string', 'product_name') !!}
+                {!! Form::submit('Search') !!}
+                {!! Form::close() !!}
+            </div>
+        </div>
+    </section>
+
+
+    <section id="productList" class="pfblock">
+        <div class="container">
+            <!-- List Product start -->
             <div class="row">
 
                 <div class="col-sm-6 col-sm-offset-3">
@@ -51,7 +53,7 @@
             </div><!-- .row -->
 
 
-            <div class="row">
+            <div class="row pfblock  pfblock-gray">
                 @foreach ($products as $product)
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="grid wow zoomIn">
