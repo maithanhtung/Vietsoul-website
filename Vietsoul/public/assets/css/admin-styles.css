@@ -727,36 +727,37 @@ MEDIA QUERIES
 -----------------------------------------------*/
 
 @media(min-width:768px) {
- #page-wrapper{
-    margin: 0 0 0 260px;
-    padding: 15px 30px;
-    min-height: 1200px;
+     #page-wrapper{
+        margin: 0 0 0 260px;
+        padding: 15px 30px;
+        min-height: 1200px;
+    }
+
+    .navbar-side {
+        z-index: 1;
+        width: 260px;
+    }
+
+    .navbar {
+        border-radius: 0px;
+    }
 }
 
-.navbar-side {
-    z-index: 1;
-    width: 260px;
-}
 
-.navbar {
-    border-radius: 0px;
-}
-
-}
 @media(max-width:480px) {
-.page-header small {
-    display: block;
-    padding-top: 14px;
-    font-size: 19px;
+    .page-header small {
+        display: block;
+        padding-top: 14px;
+        font-size: 19px;
+    }
+    .panel-left {
+        width: 85px;
+        height: 85px;
+        background: #ef5350;
+        border: 2px solid white;
+        border-radius: 100%;
+        overflow: hidden;
+        margin: 14px;
+    }
 }
-.panel-left {
-    width: 85px;
-    height: 85px;
-    background: #ef5350;
-    border: 2px solid white;
-    border-radius: 100%;
-    overflow: hidden;
-    margin: 14px;
-}
-
 
