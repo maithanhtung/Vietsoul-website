@@ -710,7 +710,7 @@ Messages
     color: #FFF;
     background-color: #e65100;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     border-top-right-radius: 3em;
 
 }
@@ -721,7 +721,6 @@ Messages
     border:none;
     border-top-right-radius: 4em;
     border-bottom-left-radius: 3em;
-    border-bottom-right-radius: 3em;
 }
 
 .panel-body {
