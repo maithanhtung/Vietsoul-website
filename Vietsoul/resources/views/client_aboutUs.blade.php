@@ -190,14 +190,14 @@
                 <div class="cbp-qtcontent">
                     <img src="assets/images/client-1.jpg" alt="client-1" />
                     <blockquote>
-                      <p>Bought it for a gift. Beautiful purse both inside and out. Came in perfect condition and great size for an everyday purse</p>
+                      <p>"Bought it for a gift. Beautiful purse both inside and out. Came in perfect condition and great size for an everyday purse. Above and beyond my expectation. Professional and elegant."</p>
                       <footer>Johny Tri</footer>
                     </blockquote>
                 </div>
                 <div class="cbp-qtcontent">
                     <img src="assets/images/client-2.jpg" alt="client-2" />
                     <blockquote>
-                      <p>It was more than I expected. Materials was good for the price! 😍😍 love the bag, recieved a lot of complement whrn I use it, I bought 2 bags, and gave the other bag to my sister, she was satisfied and was happy with her gift</p>
+                      <p>"It was more than I expected. Materials was good for the price! 😍😍 love the bag, recieved a lot of complement whrn I use it, I bought 2 bags, and gave the other bag to my sister, she was satisfied and was happy with her gift."</p>
                       <footer>Maria Anna</footer>
                     </blockquote>
                 </div>
