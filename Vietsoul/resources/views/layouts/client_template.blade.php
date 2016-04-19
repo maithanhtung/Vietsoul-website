@@ -163,9 +163,9 @@
                         Made with <span class="fa fa-heart fa-2x animated pulse"></span> in OAMK
                     </p>
                     <p class="copyright">
-                        © 2016 LinhHangTung | Images: <a href="https://unsplash.com/">Unsplash</a> & <a href="http://zoomwalls.com/">Zoomwalls</a>
+                        © 2016  Mai Thanh Tung  |  Le Thuy Hang  |  Nghiem Vu Hoang Linh<!--  | Images: <a href="https://unsplash.com/">Unsplash</a> & <a href="http://zoomwalls.com/">Zoomwalls</a> -->
 					</p>
-					<div>Icons made by <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<div>Icons made by <a href="#">FontAwesome</a>, <a href="#">SimpleLineIcons</a> and <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 				</div>
 
 			</div><!-- .row -->

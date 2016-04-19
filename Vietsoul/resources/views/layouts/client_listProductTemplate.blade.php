@@ -11,7 +11,8 @@
         <div class="container">
             <!--  Category start -->
             <br>
-            <div id="category" class="nav navbar-nav navbar-left"> <br>
+
+            <div id="category" class="nav navbar-nav navbar-left">
                 <a href="./client_allProduct">All Products | </a>
                 <a href="./client_clotProduct">Clothing | </a>
                 <a href="./client_accProduct">Accessories | </a>
@@ -20,12 +21,19 @@
                 <a href="./client_otherProduct">Other Products</a>
             </div>
             <!--  Category end -->
-            <br>
+
             <div id="searchBox" class="nav navbar-nav navbar-right">
-                {!! Form::open(array('route' => 'client_searchProduct')) !!}
-                Type name here to search product: {!! Form::input('string', 'product_name') !!}
-                {!! Form::submit('Search') !!}
-                {!! Form::close() !!}
+                <div class="row">
+                    {!! Form::open(array('route' => 'client_searchProduct')) !!}
+
+                    <input id="search-input" name="product_name" placeholder="Type name of Product" required=""></input><!--
+                    Type name here to search product: {!! Form::input('string', 'product_name') !!} -->
+                    <button type="submit" id="search-btn" title="Search product by name">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <!-- {!! Form::submit('Search') !!} -->
+                    {!! Form::close() !!}
+                </div>
             </div>
         </div>
     </section>

@@ -411,6 +411,11 @@ textarea.form-control {
 	text-align: center;
 }
 
+#search-btn {
+	background: #FFF !important;
+	border: none;
+	font-size: larger;
+}
 /* ---------------------------------------------- /*
  * Service
 /* ---------------------------------------------- */
