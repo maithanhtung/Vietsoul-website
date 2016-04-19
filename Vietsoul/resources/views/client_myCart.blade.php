@@ -91,7 +91,7 @@
             </div>
             <div class="col-md-12 col-md-4"></div>
             <div class="col-md-12 col-md-4">
-                <a href="./client_allProduct"><button class="btn btn-lg btn-block wow fadeInUp animated">Come back to shopping</button></a>
+                <a href="./client_allProduct"><button class="btn btn-lg btn-block wow fadeInUp animated">Go shopping now!</button></a>
             </div>
 
         @endif
