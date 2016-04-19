@@ -53,7 +53,7 @@
 
 	<!-- Navigation start -->
 
-	<header class="header" id="">
+	<header class="header" id="nav-bar">
 
 		<nav class="navbar navbar-custom" role="navigation">
 

@@ -10,7 +10,7 @@
             <div class="start">providing Vietnamese handmade gifts</div>
         </div>
 
-        <a href="#index.html">
+        <a href="#nav-bar">
         <div class="scroll-down">
             <span>
                 <i class="fa fa-angle-down fa-2x"></i>
@@ -23,6 +23,54 @@
     <!-- Home end -->
 @stop
 @section('content')
+    <section id="promo">
+        <div class="container pfblock">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div class="pfblock-header wow fadeInUp">
+                        <h2 class="pfblock-title">
+                            Promotion and News
+                        </h2>
+                        <div class="pfblock-line"></div>
+                        <div class="pfblock-subtitle">
+                            Grand Opening Ceremony
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="free-ship">
+                <div class="col-lg-6 wow slideInLeft animated">
+                    <h2 id="frock">FROCK OUT WITH YOUR WALLET OUT!</h2>
+                    <p>
+                        FREE SHIPPING - Viet Soul store is kicking this spring off with a special offer: You can buy unlimited souvenir without any delivery fee. This will apply for all products. Please discover your favorite items:
+                    </p>
+                    <ul>
+                        <li><a href="./client_clotProduct"> > Clothing</a></li>
+                        <li><a href="./client_accProduct"> > Accessories</a></li>
+                        <li><a href="./client_toyProduct"> > Toys</a></li>
+                        <li><a href="./client_artProduct"> > Artworks</a></li>
+                    </ul>
+                    <a class="btn wow bounceInDown animated" id="shopNow-btn" href="{{ url('/client_allProduct') }}">Shop Now</a>
+                </div>
+
+                <div class="col-lg-6 wow slideInRight animated">
+                    <img src="assets/images/banner/free-ship.jpg" class="pfblock-image responsive-image">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div id="login-link" class="wow slideInRight animated">
+                <p>Do you have a VietSoul customer account? <a href="{{ url('/register')}}">Sign up for free here!</a> - Are you VietSoul Admin? <a href="{{ url('/admin_dashboard')}}">Check your dashboard here!</a></p>
+                <br>
+            </div>
+        </div>
+
+    </section>
+
+
+<!--
     <div class="container">
     <h1>Welcome to Vietsoul</h1>
     <br>
@@ -41,5 +89,5 @@
     <a href="./client_login"><button>Client_login</button></a><br>
     <a href="./client_aboutUs"><button>Client_aboutUs</button></a><br>
 
-    </div>
+    </div> -->
 @stop

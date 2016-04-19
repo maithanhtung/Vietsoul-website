@@ -370,7 +370,33 @@ textarea.form-control {
 	margin: 15px 0;
 }
 
+/* ---------------------------------------------- /*
+ * Promotion
+/* ---------------------------------------------- */
 
+#free-ship {
+	font-size: 130%;
+}
+
+#frock {
+	color: #FF5252;
+	font-size: larger;
+}
+
+#shopNow-btn {
+	background: rgb(255, 82, 82);
+	color: #fff;
+	margin-left: 40%;
+}
+
+#shopNow-btn:hover {
+	background-color: #EC2217;
+}
+
+#login-link {
+	float: right;
+
+}
 /* ---------------------------------------------- /*
  * Product List
 /* ---------------------------------------------- */
