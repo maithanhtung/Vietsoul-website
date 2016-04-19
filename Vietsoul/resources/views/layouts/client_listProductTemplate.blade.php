@@ -70,7 +70,7 @@
                     </div>
 
                     <div class="modal fade" id="{{ $product->product_code }}" tabindex="-1" role="dialog" aria-labelledby="Modal-labelVS">
-                        <div class="modal-dialog" role="document">
+                        <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -81,10 +81,13 @@
                                         <div class="col-lg-8">
                                             <div class="col-md-6">
                                                 <img src="assets/images/{{$product->product_code}}.jpg" alt="img01" class="img-responsive"/>
+                                                <br>
                                                 <img src="assets/images/{{$product->product_code}}a.jpg" alt="img01" class="img-responsive"/>
                                             </div>
+
                                             <div class="col-md-6">
                                                 <img src="assets/images/{{$product->product_code}}b.jpg" alt="img01" class="img-responsive"/>
+                                                <br>
                                                 <img src="assets/images/{{$product->product_code}}c.jpg" alt="img01" class="img-responsive"/>
                                             </div>
                                         </div>
