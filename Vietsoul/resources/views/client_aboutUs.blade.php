@@ -20,7 +20,7 @@
 						<h2 class="pfblock-title">This is what we provide</h2>
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
-							handmade bla bla
+							The heart and soul of Viet Soul  is our global community.
 						</div>
 					</div>
 
@@ -39,7 +39,8 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">Unique Items</h3>
 							<div class="iconbox-desc">
-								Good things come to those who wait, but only the things left by those who hustle
+								Handmade items, vintage goods and craft supplies you can’t find anywhere else
+
 							</div>
 						</div>
 					</div>
@@ -55,7 +56,7 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">Traditional values</h3>
 							<div class="iconbox-desc">
-								Good things come to those who wait, but only the things left by those who hustle
+								We are a mindful, transparent, and humane business. Our plan and build for the long term .
 							</div>
 						</div>
 					</div>
@@ -71,7 +72,8 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">High Quality</h3>
 							<div class="iconbox-desc">
-								Good things come to those who wait, but only the things left by those who hustle
+								Get curated recommendations tailored to your taste. VS‘s value craftsmanship in all we make.
+
 							</div>
 						</div>
 					</div>
@@ -87,7 +89,8 @@
 						<div class="iconbox-text">
 							<h3 class="iconbox-title">Customer Support</h3>
 							<div class="iconbox-desc">
-								Good things come to those who wait, but only the things left by those who hustle
+								 Track and manage orders and get help with missing, damaged or incorrect orders
+
 							</div>
 						</div>
 					</div>
@@ -173,7 +176,7 @@
 						<h2 class="pfblock-title">What our clients say</h2>
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
-						bla bla bla
+						Thanks for all. We are trying more to get better positive feedback
 						</div>
 					</div>
 
@@ -187,15 +190,15 @@
                 <div class="cbp-qtcontent">
                     <img src="assets/images/client-1.jpg" alt="client-1" />
                     <blockquote>
-                      <p>bla bla blo</p>
-                      <footer>customer C</footer>
+                      <p>Bought it for a gift. Beautiful purse both inside and out. Came in perfect condition and great size for an everyday purse</p>
+                      <footer>Johny Tri</footer>
                     </blockquote>
                 </div>
                 <div class="cbp-qtcontent">
                     <img src="assets/images/client-2.jpg" alt="client-2" />
                     <blockquote>
-                      <p>bla bla</p>
-                      <footer>Customer a</footer>
+                      <p>It was more than I expected. Materials was good for the price! 😍😍 love the bag, recieved a lot of complement whrn I use it, I bought 2 bags, and gave the other bag to my sister, she was satisfied and was happy with her gift</p>
+                      <footer>Maria Anna</footer>
                     </blockquote>
                 </div>
 
