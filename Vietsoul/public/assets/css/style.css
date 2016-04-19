@@ -60,6 +60,26 @@ a:active {
 	color: #E7746F;
 }
 
+.modal-content {
+	vertical-align: middle;
+	border-radius: 0px;
+	width: 130%;
+}
+
+.modal {
+	vertical-align: middle;
+	border-radius: 0px;
+	padding: 10% !important;
+	margin-left: 10% !important;
+	margin-right: 10%! important;
+}
+
+.modal-dialog {
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+
+}
 
 /* ---------------------------------------------- /*
  * Reset box-shadow
@@ -366,6 +386,11 @@ textarea.form-control {
 	letter-spacing: 2px;
 }
 
+#md-bottom-tittle {
+	padding-bottom: 10px !important;
+	font-size: 18px;
+	text-align: center;
+}
 
 /* ---------------------------------------------- /*
  * Service

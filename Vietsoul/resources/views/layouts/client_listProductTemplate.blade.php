@@ -77,9 +77,30 @@
                                     <h4 class="modal-title" id="Modal-labelVS">{{ $product->product_name }}</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="assets/images/{{$product->product_code}}a.jpg" alt="img01" class="img-responsive" />
-                                    <div class="modal-works"><span></span><span></span></div>
-                                     <p>Description: {{ $product->product_description }}</p>
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="col-md-6">
+                                                <img src="assets/images/{{$product->product_code}}.jpg" alt="img01" class="img-responsive"/>
+                                                <img src="assets/images/{{$product->product_code}}a.jpg" alt="img01" class="img-responsive"/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <img src="assets/images/{{$product->product_code}}b.jpg" alt="img01" class="img-responsive"/>
+                                                <img src="assets/images/{{$product->product_code}}c.jpg" alt="img01" class="img-responsive"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="modal-works"><span></span><span></span>
+                                                <p>Description: {{ $product->product_description }}</p>
+                                                <h3 id="md-bottom-tittle">Price: $ {{ $product->product_price }}
+                                                    <span>
+                                                        <a href="./client_addcart/{{ $product->product_code }}" title="Add to Cart">
+                                                            <img src="assets/icon/addCart.png">
+                                                        </a>
+                                                    </span>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
