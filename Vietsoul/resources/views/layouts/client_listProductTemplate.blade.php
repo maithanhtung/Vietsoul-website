@@ -73,7 +73,7 @@
                                     <p>$ {{ $product->product_price }}</p>
                                 </figcaption>
                             </figure>
-                            <a href="./client_addcart/{{ $product->product_code }}" title="Add to Cart"><img src="assets/icon/addCart.png"></a>
+                            <a href="./client_addcart/{{ $product->product_code }}" title="Add to Cart" class="btn" id="add-btn"> Add To Cart <span></span> <img src="assets/icon/addCart.png" class="responsive"></a>
                         </div>
                     </div>
 
@@ -100,15 +100,18 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
-                                            <div class="modal-works"><span></span><span></span>
+                                            <div class="modal-works center">
                                                 <p>Description: {{ $product->product_description }}</p>
-                                                <h3 id="md-bottom-tittle">Price: $ {{ $product->product_price }}
-                                                    <span>
-                                                        <a href="./client_addcart/{{ $product->product_code }}" title="Add to Cart">
-                                                            <img src="assets/icon/addCart.png">
-                                                        </a>
-                                                    </span>
+                                                <h3 id="md-bottom-tittle">
+                                                    Price: $ {{ $product->product_price }}
+                                                    <br>
+                                                    <br>
+                                                    <a href="./client_addcart/{{ $product->product_code }}" title="Add to Cart" class="btn" id="add-btn">
+                                                    Add To Cart <span></span>
+                                                    <img src="assets/icon/addCart.png" class="responsive">
+                                                    </a>
                                                 </h3>
+
                                             </div>
                                         </div>
                                     </div>

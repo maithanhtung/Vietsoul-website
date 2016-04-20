@@ -415,6 +415,16 @@ textarea.form-control {
 	background: #FFF !important;
 	border: none;
 	font-size: larger;
+	text-align: center;
+}
+
+#add-btn {
+	background: rgba(17, 17, 15, 0.8);
+	color: #FFF;
+}
+
+#add-btn:hover {
+	background-color: #000;
 }
 /* ---------------------------------------------- /*
  * Service
