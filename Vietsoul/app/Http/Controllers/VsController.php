@@ -92,7 +92,7 @@ class VsController extends Controller{
 		$message->message_email = $email;
 		$message->message_content = $content;
 		$message->save();
-     echo "Your messages has been sent!";
+     echo "Thank you! Your message has been sent succesfully!";
 	}
 
 	 // public function __construct()

@@ -19,7 +19,8 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #999;
+	color: #737373;
+	font-size: larger;
 }
 
 .contents {
@@ -430,6 +431,13 @@ textarea.form-control {
  * Service
 /* ---------------------------------------------- */
 
+.ajax-response {
+	padding-top: 15px;
+	text-align: center;
+	color: #FF5252;
+	font-size: larger;
+}
+
 .iconbox {
 	background: #F5F5F5;
 	border-bottom: 1px solid #d4d4d4;
@@ -482,13 +490,7 @@ textarea.form-control {
     margin-left: 0.1em;
 }
 
-/* ---------------------------------------------- /*
- * Contact
-/* ---------------------------------------------- */
 
-.ajax-response {
-	text-align: center;
-}
 
 
 /* ---------------------------------------------- /*
@@ -503,7 +505,7 @@ textarea.form-control {
 }
 
 .remove-icon:hover, .myCart-icon:hover, .myAccount-icon:hover {
-	opacity: 0.55;
+	opacity: 0.63;
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
@@ -620,6 +622,10 @@ textarea.form-control {
 .navbar-brand {
 	text-transform: capitalize;
 	font-family: 'Dancing Script', cursive;
+}
+
+.navbar-brand:hover {
+	color: #ff4d4d;
 }
 
 .navbar-custom .dropdown-menu {
