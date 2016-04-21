@@ -27,6 +27,7 @@ The scope of project is the completion of a client side that receives user input
 
 #####Framework and library
 * Bootstrap
+* Materializecss
 * jQuery
    	<script src="assets/js/jquery-1.11.1.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
