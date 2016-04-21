@@ -39,7 +39,17 @@ class AdminController extends Controller{
 		$product_description = $request->input('product_description');
 		$product_price = $request->input('product_price');
 		$product_number = $request->input('product_number');
-		DB::table('products')->insert(array('product_code' => $product_code,'product_name' => $product_name,'product_price' => $product_price,'product_description' => $product_description,'product_number' => $product_number));
+		// DB::table('products')->insert(array('product_code' => $product_code,'product_name' => $product_name,'product_price' => $product_price,'product_description' => $product_description,'product_number' => $product_number));
+
+		$product = new Product;
+
+        $product->product_code = $product_code;
+        $product->product_name = $product_name;
+        $product->product_price = $product_price;
+        $product->product_description = $product_description;
+        $product->product_number = $product_number;
+
+        $product->save();
      return redirect()->back()->with('product_name', $product_name);
 	}
 
@@ -175,7 +185,13 @@ class AdminController extends Controller{
 		$faq_question = $request->input('faq_question');
 		$faq_answer = $request->input('faq_answer');
 		$faq_number = $request->input('faq_number');
-		DB::table('faqs')->insert(array('faq_question' => $faq_question,'faq_answer' => $faq_answer,'faq_number' => $faq_number));
+		// DB::table('faqs')->insert(array('faq_question' => $faq_question,'faq_answer' => $faq_answer,'faq_number' => $faq_number));
+
+		$faq = new Faq;
+		$faq->faq_question = $faq_question;
+		$faq->faq_answer = $faq_answer;
+		$faq->faq_number = $faq_number;
+		$faq->save();
      return redirect()->route('admin_faq');
 	}
 

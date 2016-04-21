@@ -62,7 +62,14 @@ class VsController extends Controller{
 
 		foreach ($products as $product) {
 			$product_code = $product->product_code;
-			DB::table('orders')->insert(array('product_code' => $product_code,'user_id' => $user_id,'order_process' => 'NO','order_trash' => 'NO'));
+			// DB::table('orders')->insert(array('product_code' => $product_code,'user_id' => $user_id,'order_process' => 'NO','order_trash' => 'NO'));
+			$order = new Order;
+			$order->product_code = $product_code;
+			$order->user_id = $user_id;
+			$order->order_process = 'NO';
+			$order->order_trash = 'NO';
+			$order->save();
+
 		}
 		Session::forget('products');
 		Session::forget('total');
@@ -79,7 +86,12 @@ class VsController extends Controller{
 		$name = $request->input('name');
 		$email = $request->input('email');
 		$content = $request->input('content');
-		DB::table('messages')->insert(array('message_name' => $name,'message_email' => $email,'message_content' => $content));
+		// DB::table('messages')->insert(array('message_name' => $name,'message_email' => $email,'message_content' => $content));
+		$message = new Message;
+		$message->message_name = $name;
+		$message->message_email = $email;
+		$message->message_content = $content;
+		$message->save();
      echo "Your messages has been sent!";
 	}
 

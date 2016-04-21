@@ -40,7 +40,7 @@
                 @foreach ($messages as $message)
                     <div class="panel panel-info">
                         <div class="card-title panel-heading">
-                            FROM: {{ $message->message_name }} - {{ $message->message_email }}
+                            FROM: {{ $message->message_name }} - {{ $message->message_email }} - {{ $message->created_at}}
                         </div>
                         <div class="panel-body">
                             "{{ $message->message_content }}"
