@@ -42,7 +42,7 @@
                         <i class="icon fa fa-comments fa-4x"></i>
                         <div class="VScard-content">
                             <div class="title"> {{ $message }} </div>
-                            <div class="sub-title">New Messages</div>
+                            <div class="sub-title">Messages</div>
                         </div>
                         <div class="clear-both"></div>
                     </div>
@@ -57,7 +57,7 @@
                         <i class="icon fa fa-bar-chart-o fa-4x"></i>
                         <div class="VScard-content">
                             <div class="title"> {{ $order }} </div>
-                            <div class="sub-title">New Orders</div>
+                            <div class="sub-title">Orders</div>
                         </div>
                         <div class="clear-both"></div>
                     </div>
@@ -72,7 +72,7 @@
                         <i class="icon fa fa-users fa-4x"></i>
                         <div class="VScard-content">
                             <div class="title"> {{ $user }} </div>
-                            <div class="sub-title">New Customers</div>
+                            <div class="sub-title">Customers</div>
                         </div>
                         <div class="clear-both"></div>
                     </div>
@@ -87,7 +87,7 @@
                         <i class="icon fa fa-tag fa-4x"></i>
                         <div class="VScard-content">
                             <div class="title"> {{ $total }} </div>
-                            <div class="sub-title">New Products</div>
+                            <div class="sub-title">Products</div>
                         </div>
                         <div class="clear-both"></div>
                     </div>
