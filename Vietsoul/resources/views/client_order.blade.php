@@ -24,7 +24,7 @@
             </div>
 
             <div class="col-md-12 col-md-4">
-                <a href="./client_customerService"><button class="btn btn-lg btn-block wow fadeInUp animated">Give us Feedback</button></a>
+                <a href="./client_customerService#message"><button class="btn btn-lg btn-block wow fadeInUp animated">Give us Feedback</button></a>
             </div>
             <div class="col-md-12 col-md-4"> </div>
             <div class="col-md-12 col-md-4">

@@ -50,7 +50,7 @@
                         <label for="vs_code">Code</label>
                     </div>
                     <div class="input-field col s6">
-                        <input id="vs_name" type="text" class="validate" name="product_name" length="50" required>
+                        <input id="vs_name" type="text" class="validate" name="product_name" length="100" required>
                         <label for="vs_name">Name</label>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <textarea id="vs_desc" class="materialize-textarea" name="product_description" length="150"></textarea>
+                        <textarea id="vs_desc" class="materialize-textarea" name="product_description" length="1000"></textarea>
                         <label for="vs_desc">Description</label>
                     </div>
                 </div>
