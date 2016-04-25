@@ -51,8 +51,9 @@
                         <li><a href="./client_artProduct"> > Artworks</a></li>
                     </ul>
                     <a class="btn wow bounceInDown animated" id="shopNow-btn" href="{{ url('/client_allProduct') }}">Shop Now</a>
-                </div>
 
+                </div>
+                <br>
                 <div class="col-lg-6 wow slideInRight animated">
                     <img src="assets/images/banner/free-ship.jpg" class="pfblock-image responsive-image">
                 </div>
