@@ -1,3 +1,6 @@
+http://vs.thuyhang.me/
+
+
 # Vietsoul-website
 ## Scope of the Project 
 Viet Soul is an e-commerce site. It provides a range of Vietnamese traditional items that were made by hand.
