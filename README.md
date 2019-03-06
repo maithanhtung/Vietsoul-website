@@ -17,18 +17,18 @@ The scope of project is the completion of a client side that receives user input
 
 ## Client Side SW Design
 
-#####Client Browser
+##### Client Browser
 * FireFox v3.5+
 * Internet Explorer 9+
 * Chrome
 * Safari 4+
 
-#####Language
+##### Language
 * HTML5
 * CSS
 * JavaScript
 
-#####Framework and library
+##### Framework and library
 * Bootstrap
 * Materializecss
 * jQuery
