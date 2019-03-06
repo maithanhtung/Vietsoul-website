@@ -32,20 +32,6 @@ The scope of project is the completion of a client side that receives user input
 * Bootstrap
 * Materializecss
 * jQuery
-   	<script src="assets/js/jquery-1.11.1.min.js"></script>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
-	<script src="assets/js/imagesloaded.pkgd.js"></script>
-	<script src="assets/js/jquery.sticky.js"></script>
-	<script src="assets/js/smoothscroll.js"></script>
-	<script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/jquery.easypiechart.js"></scripti
-  <script src="assets/js/waypoints.min.js"></script>
-  <script src="assets/js/jquery.cbpQTRotator.js"></script>
-* Css libraries
-  	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
-	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
-	<link href="assets/css/animate.css" rel="stylesheet">
 
 ## Server Side SW Design
 * MVC design pattern 
